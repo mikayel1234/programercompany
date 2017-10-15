@@ -5,8 +5,8 @@
 </head>
 <body>
 	<?php
-		$result=mysql_connect("localhost","root","1234");
-		if(!$result)
+		$result=mysqli_connect("localhost","root","1234");
+		if($result)
 		{
 			echo "asd";
 		}
