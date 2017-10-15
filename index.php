@@ -10,7 +10,7 @@
 		{
 			echo "asd";
 		}
-		echo mysql_error();
+		echo pg_error();
 	?>
 </body>
 </html>
