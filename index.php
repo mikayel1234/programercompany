@@ -5,7 +5,11 @@
 </head>
 <body>
 	<?php
-		mysql_connect("localhost","root","1234");
+		$result=mysql_connect("localhost","root","1234");
+		if(!$result)
+		{
+			echo "asd";
+		}
 	?>
 </body>
 </html>
