@@ -5,7 +5,7 @@
 </head>
 <body>
 	<?php
-		echo "hello world"
+		mysql_connect("localhost","root","1234");
 	?>
 </body>
 </html>
