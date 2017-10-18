@@ -7,6 +7,7 @@
 	<?php
 		require "postgresql_require.php";
 		session_start();
+		$_SESSION['email']="asd";
 		if(isset($_SESSION['email']))
 		{
 			header("home_page.php");
