@@ -2,6 +2,22 @@
 <html>
 <head>
 	<title></title>
+	<script src="jquery/jquery.min.js"></script>
+	<script src="jquery/jquery-ui.min.js"></script>
+	<script src="jquery_validate/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#adduser_form").validate({
+				rules:{
+					email:{
+						email:true,
+						rangeLenght:[8,40],
+						remote:"remote.php"
+					}
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 	<?php
@@ -13,17 +29,19 @@
 			exit;
 		}
 	?>
-	<form action="add_user.php" method="post">
+	<form action="add_user.php" method="post" id="adduser_form.php">
 		<label>Name</label>
-		<input type="text" name="name">
+		<input type="text" name="name" class="reqired">
 		<label>Lastname</label>
-		<input type="text" name="lastname">
+		<input type="text" name="lastname" class="reqired">
 		<label>email</label>
-		<input type="email" name="email">
+		<input type="email" name="email" class="reqired" >
 		<input type="radio" name="gender" value="male" checked> Male<br>
   		<input type="radio" name="gender" value="female"> Female<br>
   		<label>Birthday</label>
   		<select id="year" name="year">
+  			<option>2003</option>
+  			<option>2002</option>
 			<option>2001</option>
 			<option>2000</option>
 			<option>1999</option>
@@ -139,9 +157,10 @@
 			<option>31</option>      
 		</select>
 		<label>password</label>
-		<input type="password" name="password">
+		<input type="password" name="password" class="reqired">
 		<label>confirm password</label>
 		<input type="password1" name="password1">
+		<input type="submit" name="add_user">
 	</form>
 </body>
 </html>
