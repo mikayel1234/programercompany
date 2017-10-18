@@ -44,11 +44,11 @@
 	?>
 	<form action="adduser_form.php" method="post" id="adduser_form">
 		<label>Name</label>
-		<input type="text" name="name" class="reqired">
+		<input type="text" name="name" class="required">
 		<label>Lastname</label>
-		<input type="text" name="lastname" class="reqired">
+		<input type="text" name="lastname" class="required">
 		<label>email</label>
-		<input type="email" name="email" class="reqired" >
+		<input type="email" name="email" class="required" >
 		<input type="radio" name="gender" value="male" checked> Male<br>
   		<input type="radio" name="gender" value="female"> Female<br>
   		<label>Birthday</label>
@@ -170,7 +170,7 @@
 			<option>31</option>      
 		</select>
 		<label>password</label>
-		<input type="password" name="password" class="reqired" id="password">
+		<input type="password" name="password" class="required" id="password">
 		<label>confirm password</label>
 		<input type="password" name="password1">
 		<input type="submit" name="add_user">
