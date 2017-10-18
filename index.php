@@ -13,20 +13,8 @@
 						email:true,
 						rangelenght:[8,40],
 						remote:"remote.php"
-					},
-					name:{
-						maxlenght:20,
-						minlenght:3
-					},
-					lastname:{
-						rangelenght:[3,30]
-					},
-					password:{
-						rangelenght:[8,16]
-					},
-					password1:{
-						equalTo:"#password"
 					}
+					
 				}
 			});
 		});
