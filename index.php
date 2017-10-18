@@ -16,7 +16,7 @@
 					},
 					name:{
 						maxlenght:20,
-						minlength:3
+						minlenght:3
 					},
 					lastname:{
 						rangelenght:[3,30]
