@@ -11,10 +11,21 @@
 				rules:{
 					email:{
 						email:true,
-						rangelength:[8,16],
+						rangelength:[8,32],
 						remote:"remote.php"
+					},
+					name:{
+						rangelength:[3,20]
+					},
+					lastname:{
+						rangelength:[3,30]
+					},
+					password:{
+						rangelength:[8,16]
+					},
+					password1:{
+						equalTo:"#password"
 					}
-					
 				}
 			});
 		});
