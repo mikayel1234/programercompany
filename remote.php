@@ -2,7 +2,7 @@
     require "postgresql_require.php";
 	$email=$_POST['email'];
 	$link=pg_query("SELECT * from user_info WHERE email='$email'");
-	if(pg_num_rows($link)==1)
+	if(pg_num_rows($link)>0)
 	{
 		echo json_encode(false);
 	}
