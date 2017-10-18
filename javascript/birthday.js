@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var year=$("#year").val();
 			var month=$("#month").val();
 			var day=$("#day").val();
@@ -25,3 +26,4 @@ var year=$("#year").val();
 			{
 				return false;
 			}
+	});
