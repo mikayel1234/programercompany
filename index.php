@@ -15,7 +15,8 @@
 						remote:"remote.php"
 					},
 					name:{
-						rangelenght:[3,20]
+						maxlenght:20,
+						minlength:3
 					},
 					lastname:{
 						rangelenght:[3,30]
