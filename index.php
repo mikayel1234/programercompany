@@ -10,7 +10,7 @@
 		$_SESSION['email']="asd";
 		if(isset($_SESSION['email']))
 		{
-			header("home_page.php");
+			header("Location:home_page.php");
 			exit;
 		}
 	?>
