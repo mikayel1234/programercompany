@@ -11,17 +11,17 @@
 				rules:{
 					email:{
 						email:true,
-						rangeLenght:[8,40],
+						rangelenght:[8,40],
 						remote:"remote.php"
 					},
 					name:{
-						rangeLenght:[3,20]
+						rangelenght:[3,20]
 					},
 					lastname:{
-						rangeLenght:[3,30]
+						rangelenght:[3,30]
 					},
 					password:{
-						rangeLenght:[8,16]
+						rangelenght:[8,16]
 					},
 					password1:{
 						equalTo:"#password"
