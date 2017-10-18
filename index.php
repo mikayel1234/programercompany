@@ -13,11 +13,24 @@
 						email:true,
 						rangeLenght:[8,40],
 						remote:"remote.php"
+					},
+					name:{
+						rangeLenght:[3,20]
+					},
+					lastname:{
+						rangeLenght:[3,30]
+					},
+					password:{
+						rangeLenght:[8,16]
+					},
+					password1:{
+						equalTo:"#password"
 					}
 				}
 			});
 		});
 	</script>
+	<script src="javascript/birthday.js"></script>
 </head>
 <body>
 	<?php
@@ -157,9 +170,9 @@
 			<option>31</option>      
 		</select>
 		<label>password</label>
-		<input type="password" name="password" class="reqired">
+		<input type="password" name="password" class="reqired" id="password">
 		<label>confirm password</label>
-		<input type="password1" name="password1">
+		<input type="password" name="password1">
 		<input type="submit" name="add_user">
 	</form>
 </body>
