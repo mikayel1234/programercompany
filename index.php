@@ -11,7 +11,8 @@
 				rules:{
 					email:{
 						email:true,
-						rangelenght:[8,40]
+						rangelen:[8,40],
+						remote:"remote.php"
 					}
 					
 				}
