@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<script src="jquery/jquery.min.js"></script>
-	<script src="jquery/jquery-ui.min.js"></script>
+
 	<script src="jquery_validate/jquery.validate.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -11,7 +11,7 @@
 				rules:{
 					email:{
 						email:true,
-						rangelen:[8,40],
+						rangelenght:[8,40],
 						remote:"remote.php"
 					}
 					
