@@ -29,7 +29,7 @@
 			exit;
 		}
 	?>
-	<form action="add_user.php" method="post" id="adduser_form.php">
+	<form action="adduser_form.php" method="post" id="adduser_form">
 		<label>Name</label>
 		<input type="text" name="name" class="reqired">
 		<label>Lastname</label>
