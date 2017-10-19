@@ -20,4 +20,4 @@
     mail($email,$subject,$txt,$headers);
     
 	////////
-	header("Location:sendmail.php");
+	
