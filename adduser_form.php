@@ -16,7 +16,7 @@
     $headers = "From: programercompany.herokuapp.com" . "\r\n" ."CC: somebodyelse@example.com";
     $result=pg_query("SELECT * from user_info WHERE email='$email'");
     $row=pg_fetch_assoc($result);
-    $txt ='https://programercompany.herokuapp.com/insert_user.php?id='.$row['id'];
+    $txt ='https://programercompany.herokuapp.com/insert_user.php?id=1';
     mail($email,$subject,$txt,$headers);
     
 	////////
