@@ -9,8 +9,7 @@
 		$(document).ready(function(){
 			$("#adduser_form").validate({
 				rules:{
-					email:{
-						email:true,
+					login:{
 						rangelength:[8,32],
 						remote:"remote.php"
 					},
@@ -36,7 +35,7 @@
 	<?php
 		require "postgresql_require.php";
 		session_start();
-		if(isset($_SESSION['email']))
+		if(isset($_SESSION['login']))
 		{
 			header("Location:home_page.php");
 			exit;
@@ -47,7 +46,7 @@
 		<input type="text" name="name" class="required">
 		<label>Lastname</label>
 		<input type="text" name="lastname" class="required">
-		<label>email</label>
+		<label>username</label>
 		<input type="email" name="email" class="required" >
 		<input type="radio" name="gender" value="male" checked> Male<br>
   		<input type="radio" name="gender" value="female"> Female<br>
