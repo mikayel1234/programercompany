@@ -1,5 +1,5 @@
 $(document).ready(function(){
-			$("#subm").submit(function(){
+			$("#subm").click(function(){
 				var year=$("#year").val();
 			var month=$("#month").val();
 			var day=$("#day").val();
