@@ -8,8 +8,7 @@
 	$month=$_POST['month'];
 	$day=$_POST['day'];
 	$password=crypt($email,$_POST['password']);
-	$hours= date("h");
-	$date_registration=date("Y/m/d");
-	$link=pg_query("INSERT INTO user_info(name,lastname,email,password,year,day,month,fm,tfmail,r_hours,r_data) VALUES('$name','$lastname','$email','$password','$year','$day','$month','$gender','no',$hours,'$date_registration')");
-	header("Location:sendmail.php");
+
+	$link=pg_query("INSERT INTO user_info(name,lastname,email,password,year,day,month,fm) VALUES('$name','$lastname','$email','$password','$year','$day','$month','$gender')");
+	header("Location:index.php");
 ?>
