@@ -30,7 +30,7 @@
 			});
 		});
 	</script>
-	
+	<script src="birthday.js"></script>
 </head>
 <body>
 	<?php
