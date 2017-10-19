@@ -17,7 +17,7 @@
 	$_SESSION['login']=$login;
     header("Location:home_page.php");
 }
-    catch($error)
+    catch(Exception $error)
     {
     	header("Location:error.php");
     }
