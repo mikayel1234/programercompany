@@ -47,7 +47,7 @@
 		<label>Lastname</label>
 		<input type="text" name="lastname" class="required">
 		<label>username</label>
-		<input type="email" name="email" class="required" >
+		<input type="text" name="login" class="required" >
 		<input type="radio" name="gender" value="male" checked> Male<br>
   		<input type="radio" name="gender" value="female"> Female<br>
   		<label>Birthday</label>
