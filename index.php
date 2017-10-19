@@ -30,7 +30,7 @@
 			});
 		});
 	</script>
-	<script src="javascript/birthday.js"></script>
+	
 </head>
 <body>
 	<?php
@@ -173,7 +173,7 @@
 		<input type="password" name="password" class="required" id="password">
 		<label>confirm password</label>
 		<input type="password" name="password1">
-		<input type="submit" name="add_user" id="subm">
+		<input type="submit" name="add_user">
 	</form>
 </body>
 </html>
