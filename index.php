@@ -43,11 +43,11 @@
 	?>
 	<form action="adduser_form.php" method="post" id="adduser_form">
 		<label>Name</label>
-		<input type="text" name="name" class="required">
+		<input type="text" name="name" class="required" id="name">
 		<label>Lastname</label>
-		<input type="text" name="lastname" class="required">
+		<input type="text" name="lastname" class="required" id="lastname">
 		<label>username</label>
-		<input type="text" name="login" class="required" >
+		<input type="text" name="login" class="required" id="login">
 		<input type="radio" name="gender" value="male" checked> Male<br>
   		<input type="radio" name="gender" value="female"> Female<br>
   		<label>Birthday</label>
