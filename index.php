@@ -30,38 +30,7 @@
 			});
 		});
 	</script>
-	<script type="text/javascript">
-		
-		$(document).ready(function(){
-var year=$("#year").val();
-			var month=$("#month").val();
-			var day=$("#day").val();
-			if(year%4!=0&&month=="February"&&day==29||year%4!=0&&month=="February"&&day==30||year%4!=0&&month=="February"&&day==31)
-			{
-				return false;
-			}
-			if(year%4==0&&month=="February"&&day==30||year%4!=0&&month=="February"&&day==31)
-			{
-				return false;
-			}
-			if(month=="April"&&day==31)
-			{
-				return false;
-			}
-			if(month=="June"&&day==31)
-			{
-				return false;
-			}
-			if(month=="September"&&day==31)
-			{
-				return false;
-			}
-			if(month=="November"&&day==31)
-			{
-				return false;
-			}
-	});
-	</script>
+	<script src="javascript/birthday.js"></script>
 </head>
 <body>
 	<?php
@@ -204,7 +173,7 @@ var year=$("#year").val();
 		<input type="password" name="password" class="required" id="password">
 		<label>confirm password</label>
 		<input type="password" name="password1">
-		<input type="submit" name="add_user">
+		<input type="submit" name="add_user" id="subm">
 	</form>
 </body>
 </html>
