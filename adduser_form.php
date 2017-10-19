@@ -17,10 +17,7 @@
     $result=pg_query("SELECT * from user_info WHERE email='$email'");
     $row=pg_fetch_assoc($result);
     $txt ='https://programercompany.herokuapp.com/insert_user.php?id='.$row['id'];
-    $mail=mail($email,$subject,$txt,$headers);
-    if(!$mail)
-    {
-    	header("Location:index.php");
-    }
+    mail($email,$subject,$txt,$headers);
+    
 	////////
 	header("Location:sendmail.php");
