@@ -18,9 +18,7 @@
     $row=pg_fetch_assoc($result);
     $txt ='https://programercompany.herokuapp.com/insert_user.php?id='.$row['id'];
     new SendGrid\Mail($email,$subject,$txt,$headers);
-    if(!$mail)
-    {
-    	header("Location:index.php");
-    }
+header("Location:index.php");
+    
 	////////
 	header("Location:sendmail.php");
