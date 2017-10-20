@@ -11,7 +11,8 @@
 	$year=$_POST['year'];
 	$month=$_POST['month'];
 	$day=$_POST['day'];
-	if($year%4!=0&&$month=="February"&&$day==29||$year%4!=0&&$month=="February"&&$day==30||year%4!=0&&$month=="February"&&day==31)
+	$result=pg_query("SELECT * from user_info WHERE login='$login'");
+			if($year%4!=0&&$month=="February"&&$day==29||$year%4!=0&&$month=="February"&&$day==30||year%4!=0&&$month=="February"&&day==31)
 			{
 				header("Location:index.php");
 				exit;
@@ -42,6 +43,11 @@
 				exit;
 			}
 			if(strpos($name,"<")===false||strpos($lastname,"<")===false||strpos($login,"<")===false)
+			{
+				header("Location:index.php");
+				exit;
+			}
+			if(pg_num_rows($result)==1)
 			{
 				header("Location:index.php");
 				exit;
