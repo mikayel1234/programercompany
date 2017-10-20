@@ -14,42 +14,42 @@
 	$result=pg_query("SELECT * from user_info WHERE login='$login'");
 			if($year%4!=0&&$month=="February"&&$day==29||$year%4!=0&&$month=="February"&&$day==30||year%4!=0&&$month=="February"&&day==31)
 			{
-				header("Location:index.php");
+				header("Location:index.php?date");
 				exit;
 			}
 			if($year%4==0&&$month=="February"&&$day==30||$year%4!=0&&$month=="February"&&$day==31)
 			{
-				header("Location:index.php");
+				header("Location:index.php?date");
 				exit;
 			}
 			if($month=="April"&&$day==31)
 			{
-				header("Location:index.php");
+				header("Location:index.php?date");
 				exit;
 			}
 			if($month=="June"&&$day==31)
 			{
-				header("Location:index.php");
+				header("Location:index.php?date");
 				exit;
 			}
 			if($month=="September"&&$day==31)
 			{
-				header("Location:index.php");
+				header("Location:index.php?date");
 				exit;
 			}
 			if($month=="November"&&$day==31)
 			{
-				header("Location:index.php");
+				header("Location:index.php?date");
 				exit;
 			}
 			if(strpos($name,"<")===false||strpos($lastname,"<")===false||strpos($login,"<")===false)
 			{
-				header("Location:index.php");
+				header("Location:index.php?error");
 				exit;
 			}
 			if(pg_num_rows($result)==1)
 			{
-				header("Location:index.php");
+				header("Location:index.php?login");
 				exit;
 			}
 	$password=crypt($login,$_POST['password']);

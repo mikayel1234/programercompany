@@ -40,6 +40,18 @@
 			header("Location:home_page.php");
 			exit;
 		}
+		if(isset($_GET['date']))
+		{	
+			echo "error in date"
+		}
+		if(isset($_GET['error']))
+		{	
+			echo "error in lastname or name or login"
+		}
+		if(isset($_GET['login']))
+		{	
+			echo "error in login"
+		}
 	?>
 	<form action="adduser_form.php" method="post" id="adduser_form">
 		<label>Name</label>
