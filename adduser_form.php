@@ -11,10 +11,45 @@
 	$year=$_POST['year'];
 	$month=$_POST['month'];
 	$day=$_POST['day'];
+	if($year%4!=0&&$month=="February"&&$day==29||$year%4!=0&&$month=="February"&&$day==30||year%4!=0&&$month=="February"&&day==31)
+			{
+				header("Location:index.php");
+				exit;
+			}
+			if($year%4==0&&$month=="February"&&$day==30||$year%4!=0&&$month=="February"&&$day==31)
+			{
+				header("Location:index.php");
+				exit;
+			}
+			if($month=="April"&&$day==31)
+			{
+				header("Location:index.php");
+				exit;
+			}
+			if($month=="June"&&$day==31)
+			{
+				header("Location:index.php");
+				exit;
+			}
+			if($month=="September"&&$day==31)
+			{
+				header("Location:index.php");
+				exit;
+			}
+			if($month=="November"&&$day==31)
+			{
+				header("Location:index.php");
+				exit;
+			}
+			if(strpos($name,"<")===false||strpos($lastname,"<")===false||strpos($login,"<")===false)
+			{
+				header("Location:index.php");
+				exit;
+			}
 	$password=crypt($login,$_POST['password']);
 	$date_registration=date("Y/m/d");
 	$link=pg_query("INSERT INTO user_info(name,lastname,login,password,year,day,month,fm,r_data) VALUES('$name','$lastname','$login','$password','$year','$day','$month','$gender','$date_registration')");
-	$_SESSION['login']=$login;
+
     header("Location:home_page.php");
 }
     catch(Exception $error)
