@@ -30,15 +30,15 @@ $(document).ready(function(){
 			{
 				return false;
 			}
-			if(name.indexOf("<")==-1)
+			if(name.indexOf("<")!=-1)
 			{
 				return false;
 			}
-			if(lastname.indexOf("<")==-1)
+			if(lastname.indexOf("<")!=-1)
 			{
 				return false;
 			}
-			if(login.indexOf("<")==-1)
+			if(login.indexOf("<")!=-1)
 			{
 				return false;
 			}
