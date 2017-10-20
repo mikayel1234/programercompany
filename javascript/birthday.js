@@ -3,9 +3,9 @@ $(document).ready(function(){
 				var year=$("#year").val();
 			var month=$("#month").val();
 			var day=$("#day").val();
-			var name=$("#name").val().indexOf("<");
-			var lastname=$("#lastname").val().indexOf("<");
-			var login=$("#login").val().indexOf("<");
+			var name=$("#name").val();
+			var lastname=$("#lastname").val();
+			var login=$("#login").val();
 			if(year%4!=0&&month=="February"&&day==29||year%4!=0&&month=="February"&&day==30||year%4!=0&&month=="February"&&day==31)
 			{
 				return false;
@@ -30,7 +30,7 @@ $(document).ready(function(){
 			{
 				return false;
 			}
-			if(name!=-1||lastname!=-1||login!=-1)
+			if(name.indexOf("<")!=-1||lastname.indexOf("<")!=-1||login.indexOf("<")!=-1)
 			{
 				return false;
 			}
