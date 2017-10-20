@@ -32,7 +32,6 @@ $(document).ready(function(){
 			}
 			if(name.indexOf("<")!=-1||lastname.indexOf("<")!=-1||login.indexOf("<")!=-1)
 			{
-
 				return false;
 			}
 		
