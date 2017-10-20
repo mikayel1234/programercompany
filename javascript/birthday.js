@@ -1,6 +1,6 @@
 $(document).ready(function(){
 			$("#subm").click(function(){
-				var year=$("#year").val();
+			var year=$("#year").val();
 			var month=$("#month").val();
 			var day=$("#day").val();
 			var name=$("#name").val();
@@ -32,6 +32,7 @@ $(document).ready(function(){
 			}
 			if(name.indexOf("<")!=-1||lastname.indexOf("<")!=-1||login.indexOf("<")!=-1)
 			{
+				console.log(4);
 				return false;
 			}
 		
