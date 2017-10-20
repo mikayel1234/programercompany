@@ -29,7 +29,7 @@
 			});
 		});
 	</script>
-	<script src="javascript/birthday.js"></script>
+	
 </head>
 <body>
 	<?php
