@@ -48,7 +48,7 @@
 		<input type="text" name="lastname" class="required" id="lastname">
 		<label>username</label>
 		<input type="text" name="login" class="required" id="login">
-		<input type="radio" name="gender" value="male" checked> Male<br>
+		<input type="radio" name="gender" value="male" checked> Male
   		<input type="radio" name="gender" value="female"> Female<br>
   		<label>Birthday</label>
   		<select id="year" name="year">
