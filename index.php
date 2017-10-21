@@ -93,28 +93,65 @@
 		$robot=pg_query("SELECT * from robot WHERE id=$i");
 		$row=pg_fetch_assoc($robot);
 		$numb=$row['number'];
+		$error_count=0;
 		if(isset($_POST['loginonline']))
 		{
 			$login=$_POST['login'];
 			$password=crypt($login,$_POST['password']);
 			$result_login=pg_query("SELECT * from user_info WHERE login='$login' AND password='$password'");
-			if(pg_num_rows($result_login)==1)
+			if($o==0)
 			{
-				pg_query("UPDATE online SET online='yes' WHERE user_login='$login'");
-				header("Location:home_page.php");
-				exit;
+				$answer_url=$_GET['a'];
+				$answer_user=$_POST['answer'];
+				if(pg_num_rows($result_login)==1&&$answer_user==$answer_url)
+				{
+					pg_query("UPDATE online SET online='yes' WHERE user_login='$login'");
+					header("Location:home_page.php");
+					exit;
+				}
+				elseif($answer_user==$answer_url)
+				{
+					echo "error in password or login ";
+					$error_count=1;
+				}
+				else
+				{
+					echo "error in password or login";
+					$error_count=1;
+				}
 			}
 			else
-			{
-				echo "error in password or login";
+			{	
+				if(pg_num_rows($result_login)==1)
+				{
+					pg_query("UPDATE online SET online='yes' WHERE user_login='$login'");
+					header("Location:home_page.php");
+					exit;
+				}
+				else
+				{
+					echo "error in password or login";
+					$error_count=1;
+				}
 			}
 		}
+		$o=1;
 	?>
-	<form action="index.php"  method="post">
+	<form action="index.php?a=<?php echo $numb?>"  method="post">
 		<label>email</label>
 		<input type="text" name="login">
 		<label>password</label>
 		<input type="password" name="password">
+		<?php
+			if($error_count==1)
+			{
+				$o=0;
+				?>
+				<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;">
+				<input type="text" name="answer">
+				<?php
+			}
+		?>
 		<input type="submit" name="loginonline">
 	</form>
 	<form action="adduser_form.php?kod=<?php echo $numb?>" method="post" id="adduser_form">
