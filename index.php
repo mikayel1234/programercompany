@@ -93,7 +93,30 @@
 		$robot=pg_query("SELECT * from robot WHERE id=$i");
 		$row=pg_fetch_assoc($robot);
 		$numb=$row['number'];
+		if(isset($_POST['loginonline']))
+		{
+			$login=$_POST['login'];
+			$password=$_POST['password'];
+			$result_login=pg_query("SELECT * from user_info WHERE login='$login' AND password='$password'");
+			if(pg_num_rows($result_login)==1)
+			{
+				
+				header("Location:home_page.php");
+				exit;
+			}
+			else
+			{
+				echo "error in password or login"
+			}
+		}
 	?>
+	<form method="post" action="index.php">
+		<label>email</label>
+		<input type="text" name="login">
+		<label>password</label>
+		<input type="password" name="password">
+		<input type="submit" name="loginonline">
+	</form>
 	<form action="adduser_form.php?kod=<?php echo $numb?>" method="post" id="adduser_form">
 		<label>Name</label>
 		<input type="text" name="name" class="required" id="name">
