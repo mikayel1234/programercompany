@@ -27,6 +27,34 @@
 					}
 				}
 			});
+			try {
+       			request = new XMLHttpRequest();
+     			} catch (trymicrosoft) {
+      		try {
+         		request = new ActiveXObject("Msxml2.XMLHTTP");
+      		 } catch (othermicrosoft) {
+         	try {
+          	 	request = new ActiveXObject("Microsoft.XMLHTTP");
+        	 } catch (failed) {
+           		request = null;
+         }
+       }
+     }
+     function user_count()
+     {
+     	 request.open("GET",'user_count.php',true);
+     	 request.onreadystatechange=updatepage;
+     	 request.send(null);
+     	 function updatepage()
+     	 {
+     	 	if(request.readyState==4&&request.status==200)
+     	 	{
+     	 		var count=request.responseText;
+     	 		$("#count").text(count);
+     	 	}
+     	 }
+     }
+    	setInterval(1000,user_count);
 		});
 	</script>
 	
@@ -201,5 +229,6 @@
 		<input type="text" name="number">
 		<input type="submit" name="add_user" id="subm">
 	</form>
+	<h1 id="count"></h1>
 </body>
 </html>
