@@ -97,7 +97,7 @@
 		if(isset($_POST['loginonline']))
 		{
 			$login=$_POST['login'];
-			$password=crypt($login,$_POST['password']);
+			$password=crypt($_POST['password'],$login);
 			$result_login=pg_query("SELECT * from user_info WHERE login='$login' AND password='$password'");
 			if(isset($_POST['answer']))
 			{
