@@ -63,8 +63,9 @@
 		$i=rand(1,$count);
 		$robot=pg_query("SELECT * from robot WHERE id=$i");
 		$row=pg_fetch_assoc($robot);
+		$numb=$row['number'];
 	?>
-	<form action="adduser_form.php?kod=<?php echo $row['number']?>" method="post" id="adduser_form">
+	<form action="adduser_form.php?kod=<?php echo '$numb'?>" method="post" id="adduser_form">
 		<label>Name</label>
 		<input type="text" name="name" class="required" id="name">
 		<label>Lastname</label>
