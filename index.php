@@ -100,7 +100,7 @@
 			$result_login=pg_query("SELECT * from user_info WHERE login='$login' AND password='$password'");
 			if(pg_num_rows($result_login)==1)
 			{
-
+				pg_query("UPDATE online SET online='yes' WHERE user_login='$login'");
 				header("Location:home_page.php");
 				exit;
 			}
