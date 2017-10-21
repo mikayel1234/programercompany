@@ -191,7 +191,7 @@
 			$robot=pg_query("SELECT * from robot WHERE id=$i");
 			$row=pg_fetch_assoc($robot);
 		?>
-		<img src="<?php echo 'images/'.$row['name']?>">
+		<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;">
 		<input type="submit" name="add_user" id="subm">
 	</form>
 </body>
