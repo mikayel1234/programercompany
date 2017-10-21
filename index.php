@@ -55,7 +55,7 @@
      	 	}
      	 }
      }
-    	setInterval(1000,user_count);
+    	
 		});
 	</script>
 	
