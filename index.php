@@ -27,7 +27,10 @@
 					}
 				}
 			});
-			try {
+			
+     function user_count()
+     {
+     	try {
        			request = new XMLHttpRequest();
      			} catch (trymicrosoft) {
       		try {
@@ -40,8 +43,6 @@
          }
        }
      }
-     function user_count()
-     {
      	 request.open("GET",'user_count.php',true);
      	 request.onreadystatechange=updatepage;
      	 request.send(null);
