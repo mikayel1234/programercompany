@@ -55,14 +55,14 @@
 			}
 			if($number!=$_GET['kod'])
 			{
-				header("Location:index.php?pinkod");
-				exit;
+
+				
 			}
 	$password=crypt($login,$_POST['password']);
 	$date_registration=date("Y/m/d");
 	$link=pg_query("INSERT INTO user_info(name,lastname,login,password,year,day,month,fm,r_data) VALUES('$name','$lastname','$login','$password','$year','$day','$month','$gender','$date_registration')");
 
-    header("Location:home_page.php");
+
 }
     catch(Exception $error)
     {
