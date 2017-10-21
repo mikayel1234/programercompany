@@ -46,7 +46,8 @@
      	 request.open("GET",'user_count.php',true);
      	 request.onreadystatechange=updatepage;
      	 request.send(null);
-     	 function updatepage()
+     }
+      function updatepage()
      	 {
      	 	if(request.readyState==4&&request.status==200)
      	 	{
@@ -54,8 +55,7 @@
      	 		$("#count").text(count);
      	 	}
      	 }
-     }
-    	
+    	setInterval(1000,user_count);
 		});
 	</script>
 	
