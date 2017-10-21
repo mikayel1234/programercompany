@@ -114,9 +114,14 @@
 					echo "error in password or login ";
 					$error_count=1;
 				}
+				elseif(pg_num_rows($result_login)==1)
+				{
+					echo "error in kod ";
+					$error_count=1;
+				}
 				else
 				{
-					echo "error in password or login";
+					echo "error in password or login and kod";
 					$error_count=1;
 				}
 			}
