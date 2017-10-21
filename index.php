@@ -99,7 +99,7 @@
 			$login=$_POST['login'];
 			$password=crypt($login,$_POST['password']);
 			$result_login=pg_query("SELECT * from user_info WHERE login='$login' AND password='$password'");
-			if($o==0)
+			if(isset($_POST['answer']))
 			{
 				$answer_url=$_GET['a'];
 				$answer_user=$_POST['answer'];
@@ -140,7 +140,7 @@
 				}
 			}
 		}
-		$o=1;
+		
 	?>
 	<form action="index.php?a=<?php echo $numb?>"  method="post">
 		<label>email</label>
@@ -150,7 +150,6 @@
 		<?php
 			if($error_count==1)
 			{
-				$o=0;
 				?>
 				<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;">
 				<input type="text" name="answer">
