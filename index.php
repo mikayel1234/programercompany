@@ -100,17 +100,17 @@
 			$result_login=pg_query("SELECT * from user_info WHERE login='$login' AND password='$password'");
 			if(pg_num_rows($result_login)==1)
 			{
-				
+
 				header("Location:home_page.php");
 				exit;
 			}
 			else
 			{
-				echo "error in password or login"
+				echo "error in password or login";
 			}
 		}
 	?>
-	<form method="post" action="index.php">
+	<form action="index.php"  method="post">
 		<label>email</label>
 		<input type="text" name="login">
 		<label>password</label>
