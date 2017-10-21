@@ -184,6 +184,14 @@
 		<input type="password" name="password" class="required" id="password">
 		<label>confirm password</label>
 		<input type="password" name="password1">
+		<?php
+			$result=pg_query("SELECT * from robot");
+			$count=pg_num_rows($result);
+			$i=rand(0,$count);
+			$robot=pg_query("SELECT * from robot WHERE id=$i");
+			$row=pg_fetch_assoc($robot);
+		?>
+		<img src="<?php echo 'images/'.$row['name']?>">
 		<input type="submit" name="add_user" id="subm">
 	</form>
 </body>
