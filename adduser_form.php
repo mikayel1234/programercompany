@@ -43,7 +43,7 @@
 				header("Location:index.php?date");
 				exit;
 			}
-			if(strpos($name,"<")||strpos($lastname,"<")||strpos($login,"<"))
+			if(strpos($lastname,"<")||strpos($login,"<")||strpos($name,"<"))
 			{
 				header("Location:index.php?error");
 				exit;
