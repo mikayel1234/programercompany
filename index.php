@@ -54,7 +54,7 @@
 		}
 		if(isset($_GET['kod']))
 		{	
-			echo "error in kod";
+		echo "error in kod";
 		}
 	?>
 	<?php
