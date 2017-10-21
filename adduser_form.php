@@ -55,7 +55,7 @@
 			}
 			if($number!=$_GET['kod'])
 			{
-				header("Location:index.php?kod");
+				header("Location:index.php?pinkod");
 				exit;
 			}
 	$password=crypt($login,$_POST['password']);

@@ -52,9 +52,9 @@
 		{	
 			echo "error in login";
 		}
-		if(isset($_GET['kod']))
+		if(isset($_GET['pinkod']))
 		{	
-		echo "error in kod";
+			echo "error in kod";
 		}
 	?>
 	<?php
