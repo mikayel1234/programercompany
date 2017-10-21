@@ -55,7 +55,7 @@
      	 		$("#count").text(count);
      	 	}
      	 }
-    	setInterval(1000,user_count);
+    	setInterval(user_count,1000);
 		});
 	</script>
 	
