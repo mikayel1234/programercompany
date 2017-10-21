@@ -198,7 +198,7 @@
 		<input type="password" name="password1">
 		<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;">
 		<label>kod</label>
-		<input type="text" name="kod">
+		<input type="text" name="number">
 		<input type="submit" name="add_user" id="subm">
 	</form>
 </body>
