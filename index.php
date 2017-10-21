@@ -187,7 +187,7 @@
 		<?php
 			$result=pg_query("SELECT * from robot");
 			$count=pg_num_rows($result);
-			$i=rand(0,$count-1);
+			$i=rand(1,$count);
 			$robot=pg_query("SELECT * from robot WHERE id=$i");
 			$row=pg_fetch_assoc($robot);
 		?>
