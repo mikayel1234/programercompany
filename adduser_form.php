@@ -43,7 +43,7 @@
 				header("Location:index.php?date");
 				exit;
 			}
-			if(strpos($name,"<")===false||strpos($lastname,"<")===false||strpos($login,"<")===false)
+			if(strpos($name,"<")===true||strpos($lastname,"<")===true||strpos($login,"<")===true)
 			{
 				header("Location:index.php?error");
 				exit;
@@ -53,12 +53,16 @@
 				header("Location:index.php?login");
 				exit;
 			}
-			
+			if($number!=$_GET['kod'])
+			{
+				header("Location:index.php?kod");
+				exit;
+			}
 	$password=crypt($login,$_POST['password']);
 	$date_registration=date("Y/m/d");
 	$link=pg_query("INSERT INTO user_info(name,lastname,login,password,year,day,month,fm,r_data) VALUES('$name','$lastname','$login','$password','$year','$day','$month','$gender','$date_registration')");
 
-   
+    header("Location:home_page.php");
 }
     catch(Exception $error)
     {
