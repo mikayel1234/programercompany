@@ -11,6 +11,7 @@
 	$year=$_POST['year'];
 	$month=$_POST['month'];
 	$day=$_POST['day'];
+	$number=$_POST['number'];
 	$result=pg_query("SELECT * from user_info WHERE login='$login'");
 			if($year%4!=0&&$month=="February"&&$day==29||$year%4!=0&&$month=="February"&&$day==30||year%4!=0&&$month=="February"&&day==31)
 			{
@@ -50,6 +51,11 @@
 			if(pg_num_rows($result)==1)
 			{
 				header("Location:index.php?login");
+				exit;
+			}
+			if($number!=$_GET['kod'])
+			{
+				header("Location:index.php?kod");
 				exit;
 			}
 	$password=crypt($login,$_POST['password']);

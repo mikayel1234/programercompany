@@ -52,8 +52,19 @@
 		{	
 			echo "error in login";
 		}
+		if(isset($_GET['kod']))
+		{	
+			echo "error in kod";
+		}
 	?>
-	<form action="adduser_form.php" method="post" id="adduser_form">
+	<?php
+		$result=pg_query("SELECT * from robot");
+		$count=pg_num_rows($result);
+		$i=rand(1,$count);
+		$robot=pg_query("SELECT * from robot WHERE id=$i");
+		$row=pg_fetch_assoc($robot);
+	?>
+	<form action="adduser_form.php?kod=<?php echo $row['number']?>" method="post" id="adduser_form">
 		<label>Name</label>
 		<input type="text" name="name" class="required" id="name">
 		<label>Lastname</label>
@@ -184,14 +195,9 @@
 		<input type="password" name="password" class="required" id="password">
 		<label>confirm password</label>
 		<input type="password" name="password1">
-		<?php
-			$result=pg_query("SELECT * from robot");
-			$count=pg_num_rows($result);
-			$i=rand(1,$count);
-			$robot=pg_query("SELECT * from robot WHERE id=$i");
-			$row=pg_fetch_assoc($robot);
-		?>
 		<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;">
+		<label>kod</label>
+		<input type="text" name="kod">
 		<input type="submit" name="add_user" id="subm">
 	</form>
 </body>
