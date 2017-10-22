@@ -168,7 +168,7 @@
 		<input type="text" name="login" class="reg_input required" id="login" placeholder="username"><br><br>
 		<input type="radio" name="gender" value="male" checked> Male
   		<input type="radio" name="gender" value="female"> Female<br><br>
-  		<label>Birthday</label><br><br>
+  		<label class="reg_label">Birthday</label><br><br>
   		<select id="year" name="year" class="cr_select">
   			<option>2003</option>
   			<option>2002</option>
