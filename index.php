@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<script src="jquery/jquery.min.js"></script>
 
