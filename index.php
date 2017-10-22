@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<script src="jquery/jquery.min.js"></script>
 
 	<script src="jquery_validate/jquery.validate.min.js"></script>
@@ -61,6 +62,9 @@
 	
 </head>
 <body>
+	<div id="header_reg">
+		<h1 id="header_index">Programer Company</h1>
+	</div>
 	<?php
 		require "postgresql_require.php";
 		session_start();
