@@ -65,3 +65,9 @@ input::-webkit-inner-spin-button {
 	right: 10%;
 	width: 23%;
 }
+.cr_select
+{
+	width: 45%;
+    height: 31px;
+    font-size: 22px;
+}

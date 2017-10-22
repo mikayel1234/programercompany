@@ -28,7 +28,6 @@
 					}
 				}
 			});
-			$("#year").selectmenu({width:100%});
      function user_count()
      {
      	try {
@@ -169,8 +168,8 @@
 		<input type="text" name="login" class="reg_input required" id="login" placeholder="username"><br><br>
 		<input type="radio" name="gender" value="male" checked> Male
   		<input type="radio" name="gender" value="female"> Female<br><br>
-  		<label>Birthday</label>
-  		<select id="year" name="year">
+  		<label>Birthday</label><br><br>
+  		<select id="year" name="year" class="cr_select">
   			<option>2003</option>
   			<option>2002</option>
 			<option>2001</option>
@@ -240,7 +239,7 @@
 			<option>1937</option>
 			<option>1936</option>		
 		</select>
-		<select id="month" name="month">
+		<select id="month" name="month" class="cr_select">
 			<option value="January">January</option>
        	 	<option value="February">February</option>
         	<option value="March">March</option>
@@ -254,7 +253,7 @@
 	        <option value="November">November</option>
 	        <option value="December">December</option>
 		</select>
-		<select id="day" name="day">
+		<select id="day" name="day" class="cr_select">
 			<option>01</option>
 			<option>02</option>
 			<option>03</option>
