@@ -25,7 +25,8 @@
 }
 #reg_form{
 	margin-top: 30px;
-	margin-left: 30px;
+	margin-left: 104px;
+	display: inline-block;
 }
 #reg_img{
 	border: 1px solid #d1d5da;
@@ -45,7 +46,7 @@
 	cursor: pointer;
 }
 #reg_error{
-	margin-top: 30px;
+	margin-left: 30px;
 	color:red;
 	font-size: 25px;
 }
@@ -56,4 +57,8 @@ input[type='number'] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+#adduser_form
+{
+	display: inline-block;
 }
