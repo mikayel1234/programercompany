@@ -148,9 +148,9 @@
 	?>
 	<form action="index.php?a=<?php echo $numb?>"  method="post" id="reg_form">
 		<label class="reg_label">Username</label><br>
-		<input type="text" name="login" class="reg_input">
-		<label>password</label>
-		<input type="password" name="password">
+		<input type="text" name="login" class="reg_input"><br>
+		<label class="reg_label">password</label><br>
+		<input type="password" name="password" class="reg_input"><br>
 		<?php
 			if($error_count==1)
 			{
