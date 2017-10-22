@@ -160,7 +160,7 @@
 				<?php
 			}
 		?>
-		<input type="submit" name="loginonline" id="reg_submit" value="Log In">
+		<input type="submit" name="loginonline" class="reg_submit" value="Log In">
 	</form>
 	<form action="adduser_form.php?kod=<?php echo $numb?>" method="post" id="adduser_form">
 		<input type="text" name="name" class="reg_input required" id="name" placeholder="name">
@@ -289,8 +289,8 @@
 		<input type="password" name="password" class="reg_input required" id="password" placeholder="password">
 		<input type="password" name="password1" class="reg_input" placeholder="confirm password"><br><br>
 		<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;">
-		<input type="number" name="number" class="reg_input required"placeholder="answer"><br><br>
-		<input type="submit" name="add_user" id="subm">
+		<input type="number" name="number" class="reg_input required" placeholder="answer"><br><br>
+		<input type="submit" name="add_user" class="reg_submit" value="Create Acconut">
 	</form>
 	<h1 id="count"></h1>
 </body>
