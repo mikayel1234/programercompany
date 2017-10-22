@@ -52,7 +52,7 @@
      	 	if(request.readyState==4&&request.status==200)
      	 	{
      	 		var count=request.responseText;
-     	 		$("#count").text(count+" Users");
+     	 		$("#count").text("Users count "+count);
      	 	}
      	 }
     	setInterval(user_count,1000);
@@ -166,8 +166,8 @@
 		<input type="text" name="name" class="reg_input required" id="name" placeholder="name">
 		<input type="text" name="lastname" class="reg_input required" id="lastname" placeholder="lastname">		
 		<input type="text" name="login" class="reg_input required" id="login" placeholder="username"><br><br>
-		<input type="radio" name="gender" value="male" checked> Male
-  		<input type="radio" name="gender" value="female"> Female<br><br>
+		<input type="radio" name="gender" value="male" checked> <label class='reg_gender'>Male</label>
+  		<input type="radio" name="gender" value="female"><label class='reg_gender'>Female</label><br><br>
   		<label class="reg_label">Birthday</label><br><br>
   		<select id="year" name="year" class="cr_select">
   			<option>2003</option>
