@@ -63,4 +63,5 @@ input::-webkit-inner-spin-button {
 	display: inline-block;
 	position: absolute;
 	right: 10%;
+	width: 20%;
 }

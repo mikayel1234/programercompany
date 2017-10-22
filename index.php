@@ -164,7 +164,7 @@
 	</form>
 	<form action="adduser_form.php?kod=<?php echo $numb?>" method="post" id="adduser_form">
 		<input type="text" name="name" class="reg_input required" id="name" placeholder="name">
-		<input type="text" name="lastname" class="reg_input required" id="lastname" placeholder="lastname"><br><br>		
+		<input type="text" name="lastname" class="reg_input required" id="lastname" placeholder="lastname">		
 		<input type="text" name="login" class="reg_input required" id="login" placeholder="username">
 		<input type="radio" name="gender" value="male" checked> Male
   		<input type="radio" name="gender" value="female"> Female<br><br>
