@@ -44,3 +44,7 @@
 #reg_submit:hover{
 	cursor: pointer;
 }
+#reg_error{
+	color:red;
+	font-size: 25px;
+}

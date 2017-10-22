@@ -115,17 +115,17 @@
 				}
 				elseif($answer_user==$answer_url)
 				{
-					echo "error in password or login ";
+					echo "<p id='reg_error'>error in password or login</p>";
 					$error_count=1;
 				}
 				elseif(pg_num_rows($result_login)==1)
 				{
-					echo "error in kod ";
+					echo "<p id='reg_error'>error in kod</p>";
 					$error_count=1;
 				}
 				else
 				{
-					echo "error in password or login and kod";
+					echo "<p id='reg_error'>error in password or login and kod</p>";
 					$error_count=1;
 				}
 			}
@@ -139,7 +139,7 @@
 				}
 				else
 				{
-					echo "error in password or login";
+					echo "<p id='reg_error'>error in password or login</p>";
 					$error_count=1;
 				}
 			}
