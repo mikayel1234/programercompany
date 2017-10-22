@@ -163,9 +163,9 @@
 		<input type="submit" name="loginonline" id="reg_submit" value="Log In">
 	</form>
 	<form action="adduser_form.php?kod=<?php echo $numb?>" method="post" id="adduser_form">
-		<input type="text" name="name" class="required" id="name" placeholder="name">
-		<input type="text" name="lastname" class="required" id="lastname" placeholder="lastname"><br><br>		
-		<input type="text" name="login" class="required" id="login" placeholder="username">
+		<input type="text" name="name" class="reg_input required" id="name" placeholder="name">
+		<input type="text" name="lastname" class="reg_input required" id="lastname" placeholder="lastname"><br><br>		
+		<input type="text" name="login" class="reg_input required" id="login" placeholder="username">
 		<input type="radio" name="gender" value="male" checked> Male
   		<input type="radio" name="gender" value="female"> Female<br><br>
   		<label>Birthday</label>
@@ -286,10 +286,10 @@
 			<option>30</option>      
 			<option>31</option>      
 		</select><br><br>
-		<input type="password" name="password" class="required" id="password" placeholder="password">
-		<input type="password" name="password1" placeholder="confirm password"><br><br>
+		<input type="password" name="password" class="reg_input required" id="password" placeholder="password">
+		<input type="password" name="password1" class="reg_input" placeholder="confirm password"><br><br>
 		<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;">
-		<input type="text" name="number" placeholder="answer"><br><br>
+		<input type="number" name="number" class="reg_input required"placeholder="answer"><br><br>
 		<input type="submit" name="add_user" id="subm">
 	</form>
 	<h1 id="count"></h1>

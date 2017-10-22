@@ -61,4 +61,6 @@ input::-webkit-inner-spin-button {
 }
 #adduser_form{
 	display: inline-block;
+	position: absolute;
+	right: 10%;
 }
