@@ -45,6 +45,7 @@
 	cursor: pointer;
 }
 #reg_error{
+	margin-top: 30px;
 	color:red;
 	font-size: 25px;
 }
