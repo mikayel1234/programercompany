@@ -148,15 +148,15 @@
 	?>
 	<form action="index.php?a=<?php echo $numb?>"  method="post" id="reg_form">
 		<label class="reg_label">Username</label><br>
-		<input type="text" name="login" class="reg_input"><br>
+		<input type="text" name="login" class="reg_input"><br><br>
 		<label class="reg_label">password</label><br>
-		<input type="password" name="password" class="reg_input"><br>
+		<input type="password" name="password" class="reg_input"><br><br>
 		<?php
 			if($error_count==1)
 			{
 				?>
-				<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;">
-				<input type="text" name="answer">
+				<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;" id="reg_img"><br>
+				<input type="text" name="answer" class="reg_input"><br><br>
 				<?php
 			}
 		?>
