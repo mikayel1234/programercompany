@@ -28,7 +28,7 @@
 					}
 				}
 			});
-			
+			$("#year").selectmenu({width:100%});
      function user_count()
      {
      	try {
@@ -166,7 +166,7 @@
 		<h1>Create Acconut</h1>
 		<input type="text" name="name" class="reg_input required" id="name" placeholder="name">
 		<input type="text" name="lastname" class="reg_input required" id="lastname" placeholder="lastname">		
-		<input type="text" name="login" class="reg_input required" id="login" placeholder="username">
+		<input type="text" name="login" class="reg_input required" id="login" placeholder="username"><br><br>
 		<input type="radio" name="gender" value="male" checked> Male
   		<input type="radio" name="gender" value="female"> Female<br><br>
   		<label>Birthday</label>
