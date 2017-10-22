@@ -52,7 +52,7 @@
      	 	if(request.readyState==4&&request.status==200)
      	 	{
      	 		var count=request.responseText;
-     	 		$("#count").text(count+"Users");
+     	 		$("#count").text(count+" Users");
      	 	}
      	 }
     	setInterval(user_count,1000);
