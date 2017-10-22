@@ -156,7 +156,7 @@
 			{
 				?>
 				<img src="<?php echo 'images/'.$row['name']?>" style="width:100px;height:50px;" id="reg_img"><br>
-				<input type="number" name="answer" class="reg_input"><br><br>
+				<input type="number" name="answer" class="reg_input" placeholder="answer"><br><br>
 				<?php
 			}
 		?>
