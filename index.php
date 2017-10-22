@@ -146,7 +146,7 @@
 		}
 		
 	?>
-	<form action="index.php?a=<?php echo $numb?>"  method="post">
+	<form action="index.php?a=<?php echo $numb?>"  method="post" id="reg_form">
 		<label class="reg_label">Username</label><br>
 		<input type="text" name="login" class="reg_input">
 		<label>password</label>
