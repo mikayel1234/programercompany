@@ -58,7 +58,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-#adduser_form
-{
+#adduser_form{
 	display: inline-block;
 }
