@@ -160,7 +160,7 @@
 				<?php
 			}
 		?>
-		<input type="submit" name="loginonline" id="reg_submit" value="Log In">
+		<a href=""><input type="submit" name="loginonline" id="reg_submit" value="Log In"></a>
 	</form>
 	<form action="adduser_form.php?kod=<?php echo $numb?>" method="post" id="adduser_form">
 		<label>Name</label>
