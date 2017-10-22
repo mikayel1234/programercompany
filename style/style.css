@@ -32,8 +32,8 @@
 	border-radius: 3px;
 }
 #reg_submit{
-	width: 200px;
-    height: 251px;
+	width: 251px;
+    height: 37px;
     font-size: 27px;
     background-color: #28a745;
     background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
