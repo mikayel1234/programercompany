@@ -82,3 +82,6 @@ input::-webkit-inner-spin-button {
 	color:red;
 	font-size: 18px;
 }
+#count{
+	margin-left: 4%;
+}
