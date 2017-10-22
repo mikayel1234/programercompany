@@ -74,19 +74,19 @@
 		}
 		if(isset($_GET['date']))
 		{	
-			echo "error in date";
+			echo "<p class='cr_error'>error in date</p>";
 		}
 		if(isset($_GET['error']))
 		{	
-			echo "error in lastname or name or login";
+			echo "<p class='cr_error'>error in lastname or name or login</p>";
 		}
 		if(isset($_GET['login']))
 		{	
-			echo "error in login";
+			echo "<p class='cr_error'>error in login</p>";
 		}
 		if(isset($_GET['pinkod']))
 		{	
-			echo "error in kod";
+			echo "<p class='cr_error'>error in kod</p>";
 		}
 	?>
 	<?php
