@@ -147,8 +147,8 @@
 		
 	?>
 	<form action="index.php?a=<?php echo $numb?>"  method="post">
-		<label>email</label><br>
-		<input type="text" name="login">
+		<label class="reg_label">Username</label><br>
+		<input type="text" name="login" class="reg_input">
 		<label>password</label>
 		<input type="password" name="password">
 		<?php

@@ -12,3 +12,9 @@
 	position: relative;
 	top:10px;
 }
+.reg_label{
+	font-size: 23px;
+}
+.reg_input{
+	margin-top: 10px;
+}
