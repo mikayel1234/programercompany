@@ -37,3 +37,6 @@
     color: white;
     border:1px solid #28a745;
 }
+#reg_submit:hover{
+	cursor: pointer;
+}
