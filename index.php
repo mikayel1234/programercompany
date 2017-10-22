@@ -149,7 +149,7 @@
 	<form action="index.php?a=<?php echo $numb?>"  method="post" id="reg_form">
 		<label class="reg_label">Username</label><br>
 		<input type="text" name="login" class="reg_input"><br><br>
-		<label class="reg_label">password</label><br>
+		<label class="reg_label">Password</label><br>
 		<input type="password" name="password" class="reg_input"><br><br>
 		<?php
 			if($error_count==1)
@@ -160,7 +160,7 @@
 				<?php
 			}
 		?>
-		<input type="submit" name="loginonline">
+		<input type="submit" name="loginonline" id="reg_submit" value="Log In">
 	</form>
 	<form action="adduser_form.php?kod=<?php echo $numb?>" method="post" id="adduser_form">
 		<label>Name</label>
