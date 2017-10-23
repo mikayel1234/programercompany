@@ -29,9 +29,6 @@
 					}
 				}
 			});
-			$(".reg_submit").click(function(){
-					$("body").css({"cursor":"progress"});
-				});
 			var color=1;
      function user_count()
      {
