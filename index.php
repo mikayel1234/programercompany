@@ -29,8 +29,10 @@
 					}
 				}
 			});
+			var color=1;
      function user_count()
      {
+     	color*=1;
      	try {
        			request = new XMLHttpRequest();
      			} catch (trymicrosoft) {
@@ -53,7 +55,15 @@
      	 	if(request.readyState==4&&request.status==200)
      	 	{
      	 		var count=request.responseText;
-     	 		$("#count").text("Users count "+count);
+     	 		if(color==-1)
+     	 		{
+					$("#count").text("Users count "+count).css({"color":"red"});
+     	 		}
+     	 		else
+     	 		{
+     	 			$("#count").text("Users count "+count).css({"color":"darkred"});
+     	 		}
+     	 		
      	 	}
      	 }
     	setInterval(user_count,1000);
