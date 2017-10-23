@@ -58,10 +58,12 @@
      	 		if(color==-1)
      	 		{
 					$("#count").text("Users count "+count).css({"color":"red"});
+					$(".error").css({"color":"red"});
      	 		}
      	 		else
      	 		{
      	 			$("#count").text("Users count "+count).css({"color":"darkred"});
+     	 			$(".error").css({"color":"darkred"});
      	 		}
      	 		
      	 	}
