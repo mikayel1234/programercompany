@@ -32,7 +32,7 @@
 			var color=1;
      function user_count()
      {
-     	color*=1;
+     	color*=-1;
      	try {
        			request = new XMLHttpRequest();
      			} catch (trymicrosoft) {
