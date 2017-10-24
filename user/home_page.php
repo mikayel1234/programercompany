@@ -1,6 +1,6 @@
 <?php
  		session_start();
- 		require "../postgresql_request.php";
+ 		require "../postgresql_require.php";
  		$login=$_SESSION['login'];
  ?>
 <!DOCTYPE html>
