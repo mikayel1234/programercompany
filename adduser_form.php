@@ -62,7 +62,7 @@
 	$date_registration=date("Y/m/d");
 	$link=pg_query("INSERT INTO user_info(name,lastname,login,password,year,day,month,fm,r_data) VALUES('$name','$lastname','$login','$password','$year','$day','$month','$gender','$date_registration')");
 	$result=pg_query("INSERT INTO online(user_login,online) VALUES('$login','yes')");
-    header("Location:home_page.php");
+    header("Location:user/home_page.php");
     $_SESSION['login']=$login;
 }
     catch(Exception $error)

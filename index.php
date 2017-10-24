@@ -82,7 +82,7 @@
 		session_start();
 		if(isset($_SESSION['login']))
 		{
-			header("Location:home_page.php");
+			header("Location:user/home_page.php");
 			exit;
 		}
 		if(isset($_GET['date']))
@@ -123,7 +123,7 @@
 				{
 					pg_query("UPDATE online SET online='yes' WHERE user_login='$login'");
 					$_SESSION['login']=$login;
-					header("Location:home_page.php");
+					header("Location:user/home_page.php");
 					exit;
 				}
 				elseif($answer_user==$answer_url)
@@ -148,7 +148,7 @@
 				{
 					pg_query("UPDATE online SET online='yes' WHERE user_login='$login'");
 					$_SESSION['login']=$login;
-					header("Location:home_page.php");
+					header("Location:user/home_page.php");
 					exit;
 				}
 				else
