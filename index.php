@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>ProgramerCompany</title>
 	<link rel="shortcut icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<script src="jquery/jquery.min.js"></script>
