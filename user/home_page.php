@@ -11,7 +11,7 @@
 		$name=$row_nl['name'];
 		$lastname=$row_nl['lastname'];
 	?>
-	<title><?php echo $name." ".$lastname;?></title>
+	<title>sdf</title>
 	<link rel="shortcut icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="../style_user/style.css">
 </head>
