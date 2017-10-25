@@ -3,10 +3,13 @@
 <html>
 <head>
 	<?php
-		session_start();
 		require "../postgresql_require.php";
+		session_start();
 		$login=$_SESSION['login'];
-		echo 1;
+		if(isset($_SESSION['login']))
+		{
+			echo "string";
+		}
 		echo $login;
 		$result_user_nm=pg_query("SELECT * from user_info WHERE login='$login'");
 		$row_nl=pg_fetch_assoc($result_user_nm);
