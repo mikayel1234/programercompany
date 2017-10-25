@@ -4,7 +4,9 @@
 <head>
 	<?php
 		session_start();
+		echo 1;
 		require "../postgresql_require.php";
+		echo "string";
 		$login=$_SESSION['login'];
 		echo $login;
 		$result_user_nm=pg_query("SELECT * from user_info WHERE login='$login'");
