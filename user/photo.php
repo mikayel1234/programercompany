@@ -35,7 +35,7 @@
 	<li><a href="photo.php">Photo</a></li>
 </ul>
 <div>
-	<h1>Home</h1>
+	<h1>photo</h1>
 </div>
 </body>
 </html>
