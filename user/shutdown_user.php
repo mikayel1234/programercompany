@@ -7,8 +7,7 @@
 	$year=date("Y");
 	$mont=date("m");
 	$day=date("d");
-	echo $day;
-	$query=pg_query("UPDATE online SET hour=$hours,minute=$minute,day=$day,month=$month,year=$year WHERE user_login='$login'");
+	$query=pg_query("UPDATE online SET online='no' WHERE user_login='$login'");
 	$_SESSION['login']="";
-	
+	header("Location:../index.php");
 ?>
