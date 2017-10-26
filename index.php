@@ -80,7 +80,7 @@
 	<?php
 		require "postgresql_require.php";
 		session_start();
-		if(isset($_SESSION['login']))
+		if(isset($_SESSION['login'])&&strlen($_SESSION['login'])>0)
 		{
 			header("Location:user/home_page.php");
 			exit;
