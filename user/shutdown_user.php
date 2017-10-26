@@ -5,9 +5,9 @@
 	$hours=date("h");
 	$minute=date("i");
 	$year=date("Y");
-	$mont=date("m");
+	$month=date("m");
 	$day=date("d");
-	$query=pg_query("UPDATE online SET hour=$hours WHERE user_login='$login'");
+	$query=pg_query("UPDATE online SET hour=$hours,minute=$minute,day=$day,month=$month,year=$year,online='no' WHERE user_login='$login'");
 	$_SESSION['login']="";
 	header("Location:../index.php");
 ?>
