@@ -13,6 +13,7 @@
 		}
 		$img_user=pg_query("SELECT * from user_img WHERE login='$login'");
 		$img_src=pg_fetch_assoc($img_user);
+		$img_href=$img_src['href'];
 	?>
 <!DOCTYPE html>
 <html>
@@ -26,7 +27,7 @@
 </head>
 <body>
 <a href="shutdown_user.php">shoudown</a>
-<img src="<?php $img_src['href']?>">
+<img src="<?php $img_href?>">
 <ul>
 	<li><a href="#">Public</a></li>
 	<li><a href="#">Friends</a></li>
