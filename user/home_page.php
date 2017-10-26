@@ -27,7 +27,7 @@
 </head>
 <body>
 <a href="shutdown_user.php">shoudown</a>
-<img src="<?php $img_href?>">
+<img src="<?php echo $img_href?>">
 <ul>
 	<li><a href="#">Public</a></li>
 	<li><a href="#">Friends</a></li>
