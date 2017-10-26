@@ -25,5 +25,11 @@
 </head>
 <body>
 <a href="shutdown_user.php">shoudown</a>
+<ul>
+	<li><a href="#">Public</a></li>
+	<li><a href="#">Friends</a></li>
+	<li><a href="#">Photo</a></li>
+</ul>
+
 </body>
 </html>
