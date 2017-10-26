@@ -16,7 +16,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<noscript>
+    	<meta http-equiv="refresh" content="0; url=error/javascript.php">
+	</noscript>
 	<title><?php echo $name." ".$lastname;?></title>
 	<link rel="shortcut icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="../style_user/style.css">

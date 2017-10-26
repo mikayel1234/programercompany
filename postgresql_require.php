@@ -3,7 +3,7 @@
 		$dbconn4 = pg_connect($conn_string);
 		if(!$dbconn4)
 		{
-			header("Location:error.php");
+			header("Location:error/error.php");
 			exit;
 		}
 ?>
