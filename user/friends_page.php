@@ -32,7 +32,7 @@
 <ul>
 	<li><a href="home_page.php">Public</a></li>
 	<li><a href="friends_page.php">Friends</a></li>
-	<li><a href="Photo.php">Photo</a></li>
+	<li><a href="photo.php">Photo</a></li>
 </ul>
 <div>
 	<h1>friends</h1>
