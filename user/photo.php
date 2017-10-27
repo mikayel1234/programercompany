@@ -14,7 +14,7 @@
 				$time++;
 			}
 			echo $upload_1_img;
-			@move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$upload_1_img);
+			move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$upload_1_img);
 			echo "string";
 		}
 	}
