@@ -13,7 +13,9 @@
 			{
 				$time++;
 			}
+			echo $upload_1_img;
 			@move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$upload_1_img);
+			echo "string";
 		}
 	}
 	$img_1_user=pg_query("SELECT * from user_img WHERE login='$login'");
