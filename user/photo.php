@@ -13,7 +13,7 @@
 			{
 				$time++;
 			}
-			echo $upload_1_img;
+			echo $_FILES["img_1_u"]["tmp_name"];
 			if(@move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$upload_1_img))
 				echo "string";
 		}
