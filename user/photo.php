@@ -9,12 +9,9 @@
 		{
 			$user_1_img=$_FILES['img_1_u']['name'];
 			$time=time();
-			while(file_exists($upload_1_img="photo_1/".$time."-".$user_1_img))
-			{
-				$time++;
-			}
+			
 			echo $_FILES["img_1_u"]["error"];
-			move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$upload_1_img);
+			move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$user_1_img);
 				
 		}
 	}
