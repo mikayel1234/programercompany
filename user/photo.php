@@ -7,15 +7,13 @@
 	{
 		if(@getimagesize($_FILES['img_1_u']['tmp_name']))
 		{
-			$user_1_img=$_FILES['img_1_u']['name'];
-			$time=time();
-			
-			echo $_FILES["img_1_u"]["error"];
-			if(@move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$user_1_img))
-			{
-				echo "string";
-			}
-				
+			$image = $_FILES["img_1_u"];
+			$image_filename = $image['name'];
+			$image_info = getimagesize($image['tmp_name']);
+			$image_mime_type = $image_info['mime'];
+			$image_size = $image['size'];
+			$image_data = mysql_real_escape_string(file_get_contents($image['tmp_name']));
+			$insert_1_img=pg_query("INSERT INTO user_1_photo(image_name,image_size,image_mime,image_data) VALUES('$image_filename',$image_size,'$image_mime_type','$image_data')");
 		}
 			
 	}
