@@ -7,5 +7,5 @@
 	header('Content-type: ' . $image['image_mime']);
 header('Content-length: ' . $image['image_size']);
 echo $image['imgae_data'];
-echo "string";
+
 ?>
