@@ -6,7 +6,8 @@
 	$image=pg_fetch_assoc($result);
 	header('Content-length:'.$image['image_size']);
 	header('Content-type:' . $image['image_mime']);
-	
+	$name=$image['image_name'];
+	header('Content-Disposition: attachment; filename="$name"');
 echo $image['image_data'];
 
 ?>
