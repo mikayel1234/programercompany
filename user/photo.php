@@ -11,9 +11,13 @@
 			$time=time();
 			
 			echo $_FILES["img_1_u"]["error"];
-			move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$user_1_img);
+			if(move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$user_1_img))
+			{
+				echo "string";
+			}
 				
 		}
+			}
 	}
 	$img_1_user=pg_query("SELECT * from user_img WHERE login='$login'");
 	$img_1_href=pg_fetch_assoc($img_1_user);
