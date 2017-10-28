@@ -8,6 +8,6 @@
 	header('Content-type:' . $image['image_mime']);
 	$name=$image['image_name'];
 	
-echo $image['image_data'];
+echo '1'.$image['image_data'];
 
 ?>
