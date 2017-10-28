@@ -30,6 +30,7 @@
 		<input type="submit" name="add_1_img">
 
 	</form>
+	<img>
 </div>
 </body>
 </html>
