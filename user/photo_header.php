@@ -6,6 +6,6 @@
 	$image=pg_fetch_assoc($result);
 	header('Content-type: ' . $image['image_mime']);
 header('Content-length: ' . $image['image_size']);
-echo $image['imgae_data'];
+echo $image['image_data'];
 
 ?>
