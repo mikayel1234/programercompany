@@ -14,7 +14,7 @@
 			$image_size = $image['size'];
 			$image_data = file_get_contents($image['tmp_name']);
 			echo $image_size;
-			$insert_1_img=pg_query("INSERT INTO user_1_photo(image_name,image_size,image_mime,image_data) VALUES('$image_filename',$image_size,'$image_mime_type','$image_data')");
+			$insert_1_img=pg_query("INSERT INTO user_1_photo(image_name,image_size,image_mime,image_data) VALUES('$image_filename',$image_size,'$image_mime_type',$image_data)");
 		}
 			
 	}
