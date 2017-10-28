@@ -11,7 +11,7 @@
 			$time=time();
 			
 			echo $_FILES["img_1_u"]["error"];
-			if(move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$user_1_img))
+			if(@move_uploaded_file($_FILES["img_1_u"]["tmp_name"],$user_1_img))
 			{
 				echo "string";
 			}
