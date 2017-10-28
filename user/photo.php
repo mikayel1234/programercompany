@@ -12,9 +12,9 @@
 			$image_info = getimagesize($image['tmp_name']);
 			$image_mime_type = $image_info['mime'];
 			$image_size = $image['size'];
-			$image_data = pg_escape_string(bin2hex(file_get_contents($image['tmp_name'])));
-			echo pack("H*", $image_data);;
-		$insert_1_img=pg_query("INSERT INTO user_1_photo(login,image_name,image_size,image_mime,image_data) VALUES('$login','$image_filename',$image_size,'$image_mime_type','$image_data')");
+			$image_data = file_get_contents($image['tmp_name']);
+			
+		$insert_1_img=pg_query_params($dbconn4,"INSERT INTO user_1_photo(login,image_name,image_size,image_mime,image_data) VALUES('$login','$image_filename',$image_size,'$image_mime_type','$image_data')");
 		}
 			
 	}
