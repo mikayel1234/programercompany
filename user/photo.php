@@ -17,7 +17,7 @@
 			}
 				
 		}
-			}
+			
 	}
 	$img_1_user=pg_query("SELECT * from user_img WHERE login='$login'");
 	$img_1_href=pg_fetch_assoc($img_1_user);
