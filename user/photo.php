@@ -12,9 +12,9 @@
 			$image_info = getimagesize($image['tmp_name']);
 			$image_mime_type = $image_info['mime'];
 			$image_size = $image['size'];
-			echo "string";
+			echo $image_filename;
 			$image_data = mysql_real_escape_string(file_get_contents($image['tmp_name']));
-			echo $image_filename." ".$image_mime_type." ".$image_size." ".$image_data;
+			echo $image_data;
 			$insert_1_img=pg_query("INSERT INTO user_1_photo(image_name,image_size,image_mime) VALUES('$image_filename',$image_size,'$image_mime_type')");
 		}
 			
