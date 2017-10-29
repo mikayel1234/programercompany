@@ -22,6 +22,7 @@
     	<meta http-equiv="refresh" content="0; url=error/javascript.php">
 	</noscript>
 	<title><?php echo $name." ".$lastname;?></title>
+	<link href="../jquery-ui-css/jquery-ui.min.css" rel="stylesheet">
 	<link rel="shortcut icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="../style_user/style.css">
 	<script src="../jquery/jquery.min.js"></script>
