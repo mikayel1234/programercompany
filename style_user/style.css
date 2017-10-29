@@ -31,5 +31,12 @@
 }
 #friend{
 	position: absolute;
-    left: 21px;
+    left: 22px;
+}
+#photo_1_img{
+	width: 48px;
+    border-radius: 31px;
+    position: absolute;
+    top: 9px;
+    left: 1%;
 }

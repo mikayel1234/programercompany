@@ -42,7 +42,7 @@
 	<h1 id="header_index">Programer Company</h1>
 </div>
 <a href="shutdown_user.php"><img src="../images/images.jpg" id="logout_logo"></a>
-<img src="<?php echo $img_href?>">
+<img src="<?php echo $img_href?>" id="photo_1_img"><p id="nmls"><?php echo $name." ".$lastname;?></p>
 <form method="post" action="friends_search.php" id="search_friend">
 	<input type="search" name="friend" id="friend">
 	<input type="image" name="search_user" id="button_search" src="../images/search.jpg">
