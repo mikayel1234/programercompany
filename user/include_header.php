@@ -43,11 +43,12 @@
 </div>
 <a href="shutdown_user.php"><img src="../images/images.jpg" id="logout_logo"></a>
 <img src="<?php echo $img_href?>">
-<ul class="sm sm-simple">
-	<li><a href="home_page.php">Public</a></li>
-	<li><a href="friends_page.php">Friends</a></li>
-</ul>
 <form method="post" action="friends_search.php">
 	<input type="text" name="friend" id="friend">
 	<input type="submit" name="search_user">
 </form>
+<ul class="sm sm-simple">
+	<li><a href="home_page.php">Public</a></li>
+	<li><a href="friends_page.php">Friends</a></li>
+</ul>
+
