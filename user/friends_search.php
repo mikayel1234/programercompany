@@ -14,7 +14,8 @@
 		$img_href=$frined_img['href'];
 		?>
 		<img src="<?php echo $img_href?>">
-		<p><?php echo $name?></p><br>
+		<p><?php echo $name?></p>
+		<p><?php echo $row['id']?></p>
 		<p><?php echo $lastname?></p>
 		<?php
 		$now_year=date("Y");
