@@ -9,14 +9,21 @@
 	{
 
 		$frined_login=$row['login'];
-		echo $frined_login;
 		$img_result=pg_query("SELECT * from user_img WHERE login='$frined_login'");
 		$frined_img=pg_fetch_assoc($img_result);
 		$img_href=$frined_img['href'];
-		echo $img_href;
 		?>
 		<img src="<?php echo $img_href?>">
+		<p><?php echo $name?></p><br>
+		<p><?php echo $lastname?></p>
 		<?php
+		$now_year=date("Y");
+		$now_month=date("F");
+		$now_day=date("d");
+		$user_year=$row['year'];
+		$user_month=$row['month'];
+		$user_day=$row['day'];
+		echo $now_month;
 	}
 	
 ?>
