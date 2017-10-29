@@ -24,4 +24,12 @@
 	position: absolute;
     top: 42px;
 }
-
+#button_search{
+	width: 25px;
+    position: absolute;
+    top: 0px;
+}
+#friend{
+	position: absolute;
+    left: 21px;
+}
