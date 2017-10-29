@@ -24,4 +24,6 @@
 	position: absolute;
     top: 42px;
 }
-
+#friend{
+	background-image: url('../images/search.jpg');
+}
