@@ -4,7 +4,7 @@
 	$nf=explode(' ',$search);
 	$name=$nf[0];
 	$lastname=$nf[1];
-	$result=pg_query("SELECT * from user_info WHERE name='$name' AND lastname='$lastname' AND NOT login='$login'");
+	$result=pg_query("SELECT * from user_info WHERE (name='$name' OR lastname='$lastname') AND NOT login='$login'");
 	while($row=pg_fetch_assoc($result))
 	{
 
