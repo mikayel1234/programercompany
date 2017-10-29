@@ -71,7 +71,39 @@
 			$user_month=12;
 		}
 		$user_day=$row['day'];
-		echo $user_month." ".$now_month;
+		if($now_month>$user_month)
+		{
+			?>
+			<p>Year <?php echo $now_year-$user_year?></p>
+			<?php
+		}
+		elseif($now_month<$user_month)
+		{
+			?>
+			<p>Year <?php echo $now_year-$user_year-1?></p>
+			<?php
+		}
+		elseif($now_month==$user_month)
+		{
+			if($now_day>$user_day)
+			{
+				?>
+				<p>Year <?php echo $now_year-$user_year?></p>
+				<?php
+			}
+			elseif($now_day<$user_day)
+			{
+				?>
+				<p>Year <?php echo $now_year-$user_year-1?></p>
+				<?php
+			}
+			elseif($now_day==$user_day)
+			{
+				?>
+				<p>Year <?php echo $now_year-$user_year?></p>
+				<?php
+			}
+		}
 	}
 	
 ?>
