@@ -7,6 +7,7 @@
 	$result=pg_query("SELECT * from user_info WHERE name='$name' AND lastname='$lastname'");
 	while($row=pg_fetch_assoc($result))
 	{
+		echo 1;
 		$frined_login=$row['login'];
 		$img_result=pg_query("SELECT * from user_img WHERE login='$frined_login'");
 		$frined_img=pg_fetch_assoc($img_result);
