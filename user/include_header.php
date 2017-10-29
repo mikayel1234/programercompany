@@ -45,7 +45,7 @@
 <img src="<?php echo $img_href?>">
 <form method="post" action="friends_search.php" id="search_friend">
 	<input type="search" name="friend" id="friend">
-	<input type="submit" name="search_user" id="button_search"><img src="../images/search.jpg"></input>
+	<input type="submit" name="search_user" id="button_search" src="../images/search.jpg">
 </form>
 <ul class="sm sm-simple">
 	<li><a href="home_page.php">Public</a></li>
