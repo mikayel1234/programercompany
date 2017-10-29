@@ -26,11 +26,14 @@
 	<link rel="shortcut icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="../style_user/style.css">
 	<script src="../jquery/jquery.min.js"></script>
-	
+	<link rel="stylesheet" href="../smartmenus/sm-core-css.css">
+	<link rel="stylesheet" href="../smartmenus/sm-blue.css">
+	<script src="../smartmenus/jquery.smartmenus.min.js"></script>
 	<script src="../jquery/jquery-ui.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#friend").autocomplete({source:"search_user.php"});
+			$('.sm').smartmenus();
 		});
 	</script>
 </head>
@@ -40,10 +43,9 @@
 </div>
 <a href="shutdown_user.php"><img src="../images/images.jpg" id="logout_logo"></a>
 <img src="<?php echo $img_href?>">
-<ul>
+<ul class="sm sm-blue">
 	<li><a href="home_page.php">Public</a></li>
 	<li><a href="friends_page.php">Friends</a></li>
-	
 </ul>
 <form method="post" action="friends_search.php">
 	<input type="text" name="friend" id="friend">
