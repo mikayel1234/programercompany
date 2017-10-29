@@ -1,9 +1,9 @@
 <?php
 	include "include_header.php";
 	$search=$_POST['friend'];
-	$result=pg_query("SELECT * from user_info WHERE MATCH(name, lastname) AGAINST ('$search')");
+	$result1=pg_query("SELECT CONCAT(name,' ', lastname) AS 'fullname'from user_info WHERE fullname ='$search'");
 	echo $search;
-	while($row=pg_fetch_assoc($result))
+	while($row=pg_fetch_assoc($result1))
 	{
 		echo 1;
 	}
