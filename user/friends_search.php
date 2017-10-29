@@ -7,11 +7,13 @@
 	$result=pg_query("SELECT * from user_info WHERE name='$name' AND lastname='$lastname'");
 	while($row=pg_fetch_assoc($result))
 	{
-		echo 1;
+
 		$frined_login=$row['login'];
+		echo $frined_login;
 		$img_result=pg_query("SELECT * from user_img WHERE login='$frined_login'");
 		$frined_img=pg_fetch_assoc($img_result);
 		$img_href=$frined_img['href'];
+		echo $img_href;
 		?>
 		<img src="<?php echo $img_href?>">
 		<?php
