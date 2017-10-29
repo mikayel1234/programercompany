@@ -1,0 +1,14 @@
+#header_reg{
+	height: 74px;
+	background-color: #79589F;
+	margin-top:-27px;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+#header_index{
+	text-align: center;
+	color:white;
+	font-size: 40px;
+	position: relative;
+	top:10px;
+}

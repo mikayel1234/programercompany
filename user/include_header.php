@@ -35,6 +35,9 @@
 	</script>
 </head>
 <body>
+<div id="header_reg">
+	<h1 id="header_index">Programer Company</h1>
+</div>
 <a href="shutdown_user.php">shoudown</a>
 <img src="<?php echo $img_href?>">
 <ul>
