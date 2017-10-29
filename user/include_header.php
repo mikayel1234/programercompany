@@ -27,7 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="../style_user/style.css">
 	<script src="../jquery/jquery.min.js"></script>
 	<link rel="stylesheet" href="../smartmenus/sm-core-css.css">
-	<link rel="stylesheet" href="../smartmenus/sm-clean.css">
+	<link rel="stylesheet" href="../smartmenus/sm-simple.css">
 	<script src="../smartmenus/jquery.smartmenus.min.js"></script>
 	<script src="../jquery/jquery-ui.min.js"></script>
 	<script type="text/javascript">
@@ -43,7 +43,7 @@
 </div>
 <a href="shutdown_user.php"><img src="../images/images.jpg" id="logout_logo"></a>
 <img src="<?php echo $img_href?>">
-<ul class="sm sm-clean">
+<ul class="sm sm-simple">
 	<li><a href="home_page.php">Public</a></li>
 	<li><a href="friends_page.php">Friends</a></li>
 </ul>
