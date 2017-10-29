@@ -43,7 +43,7 @@
 </div>
 <a href="shutdown_user.php"><img src="../images/images.jpg" id="logout_logo"></a>
 <img src="<?php echo $img_href?>">
-<ul class="sm sm-simple">
+<ul class="sm sm-core-css">
 	<li><a href="home_page.php">Public</a></li>
 	<li><a href="friends_page.php">Friends</a></li>
 </ul>
