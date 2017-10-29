@@ -1,16 +1,16 @@
 <?php
 		require "../postgresql_require.php";
 		session_start();
-		$login=$_SESSION['login'];	
-		$result_user_nm=pg_query("SELECT * from user_info WHERE login='$login'");
-		$row_nl=pg_fetch_assoc($result_user_nm);
-		$name=$row_nl['name'];	
-		$lastname=$row_nl['lastname'];
 		if(!isset($_SESSION['login'])||!strlen($_SESSION['login'])>0)
 		{
 			header("Location:../index.php");
 			exit;
 		}
+		$login=$_SESSION['login'];	
+		$result_user_nm=pg_query("SELECT * from user_info WHERE login='$login'");
+		$row_nl=pg_fetch_assoc($result_user_nm);
+		$name=$row_nl['name'];	
+		$lastname=$row_nl['lastname'];
 		$img_user=pg_query("SELECT * from user_img WHERE login='$login'");
 		$img_src=pg_fetch_assoc($img_user);
 		$img_href=$img_src['href'];
@@ -42,7 +42,7 @@
 	<li><a href="friends_page.php">Friends</a></li>
 	
 </ul>
-<form method="post" action="friends.php">
+<form method="post" action="friends_search.php">
 	<input type="text" name="friend" id="friend">
 	<input type="submit" name="search_user">
 </form>
