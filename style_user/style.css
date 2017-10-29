@@ -20,4 +20,10 @@
     right: 2%;
     border-radius: 41px;
 }
-
+#search_friend{
+	position: absolute;
+    top: 42px;
+}
+#friend{
+	background-image: url("../images/search.jpg");
+}
