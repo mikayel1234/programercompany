@@ -25,6 +25,13 @@
 	<link rel="shortcut icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="../style_user/style.css">
 	<script src="../jquery/jquery.min.js"></script>
+	
+	<script src="../jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#friend").autocomplete({source:"search_user.php"});
+		});
+	</script>
 </head>
 <body>
 <a href="shutdown_user.php">shoudown</a>
@@ -34,3 +41,7 @@
 	<li><a href="friends_page.php">Friends</a></li>
 	
 </ul>
+<form method="post" action="friends.php">
+	<input type="search" name="friend" id="friend">
+	<input type="submit" name="search_user">
+</form>
