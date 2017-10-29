@@ -22,7 +22,7 @@
 		$now_day=date("d");
 		$user_year=$row['year'];
 		$user_month=$row['month'];
-		$user_month=date("F", strtotime($user_month))
+		$user_month=date("F", strtotime($user_month));
 		$user_day=$row['day'];
 		echo $now_month." ".$now_month." ".$now_day." ".$user_year." ".$user_month." ".$user_day;
 	}
