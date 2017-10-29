@@ -12,11 +12,7 @@
 			$array[$i]=$row['name'];
 			$i++;
 		}
-		while($row1=mysql_fetch_assoc($result1))
-		{	
-			$array[$i]=$row1['name'];
-			$i++;
-		}
+		
 		echo json_encode($array);
 	}
 ?>

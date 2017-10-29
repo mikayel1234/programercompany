@@ -42,6 +42,6 @@
 	
 </ul>
 <form method="post" action="friends.php">
-	<input type="search" name="friend" id="friend">
+	<input type="text" name="friend" id="friend">
 	<input type="submit" name="search_user">
 </form>
