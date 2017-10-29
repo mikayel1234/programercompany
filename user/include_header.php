@@ -38,7 +38,7 @@
 <div id="header_reg">
 	<h1 id="header_index">Programer Company</h1>
 </div>
-<a href="shutdown_user.php"><img src="../images/logout-256.png" ></a>
+<a href="shutdown_user.php"><img src="../images/images.jpg" ></a>
 <img src="<?php echo $img_href?>">
 <ul>
 	<li><a href="home_page.php">Public</a></li>
