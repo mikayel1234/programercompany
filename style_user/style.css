@@ -50,6 +50,6 @@
 .search_user_photo{
 	width:25%;
 }
-#nam{
-	color:red;
+.user_nl{
+	display: inline-block;
 }

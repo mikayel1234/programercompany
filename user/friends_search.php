@@ -15,9 +15,9 @@
 			$frined_img=pg_fetch_assoc($img_result);
 			$img_href=$frined_img['href'];
 			?>
-			<img src="<?php echo $img_href?>" class="search_user_photo">
-			<p id="nam"><?php echo $row['name']?></p>
-			<p><?php echo $row['lastname']?></p>
+			<img src="<?php echo $img_href?>" class="search_user_photo"><br>
+			<p class="user_nl"><?php echo $row['name']?></p>
+			<p class="user_nl"><?php echo $row['lastname']?></p>
 			<?php
 			$now_year=date("Y");
 			$now_month=date("n");
