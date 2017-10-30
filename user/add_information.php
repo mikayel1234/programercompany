@@ -2,6 +2,7 @@
 	include "include_header.php";
 ?>
 <script type="text/javascript">
+	$(document).ready(function(){
 		$("#new_information").validate({
 			rules:{
 				work:{
@@ -18,6 +19,7 @@
 				}
 			}
 		});
+	});
 </script>
 <form method="post" action="add_psql_user_info.php" id="new_information"> 
 	<label>workplace</label>
