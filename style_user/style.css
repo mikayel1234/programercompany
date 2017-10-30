@@ -1,0 +1,55 @@
+#header_reg{
+	height: 74px;
+	background-color: #79589F;
+	margin-top:-27px;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+#header_index{
+	text-align: center;
+	color:white;
+	font-size: 40px;
+	position: relative;
+	top:10px;
+}
+#logout_logo{
+	width:55px;
+	height:55px;
+	position: absolute;
+    top: 20px;
+    right: 2%;
+    border-radius: 41px;
+}
+#search_friend{
+	position: absolute;
+    top: 42px;
+}
+#button_search{
+	width: 25px;
+    position: absolute;
+    top: 0px;
+}
+#friend{
+	position: absolute;
+    left: 22px;
+}
+#photo_1_img{
+	width: 48px;
+    border-radius: 31px;
+    position: absolute;
+    top: 9px;
+    left: 1%;
+}
+#nmls{
+	position: absolute;
+    top: -9px;
+    left: 7%;
+    color: white;
+    font-size: 20px;
+}
+.search_user_photo{
+	width:25%;
+}
+#nam{
+	color:red;
+}
