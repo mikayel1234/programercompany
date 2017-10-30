@@ -19,7 +19,7 @@
 			?>
 			<img src="<?php echo $img_href?>" class="search_user_photo"><br>
 			<p class="user_nl"><?php echo $row['name']?></p>
-			<p class="user_nl"><?php echo $row['lastname']?></p>
+			<p class="user_nl"><?php echo $row['lastname']?></p><br>
 			<?php
 			$now_year=date("Y");
 			$now_month=date("n");
