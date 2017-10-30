@@ -5,7 +5,7 @@
 	$name=$nf[0];
 	$lastname=$nf[1];
 	$result=pg_query("SELECT * from user_info WHERE (name='$name' OR lastname='$lastname') AND NOT login='$login'");
-	if(pg_num_rows($result))
+	if(pg_num_rows($result)==0)
 	{
 		?>
 		<p>no result</p>
