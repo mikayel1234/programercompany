@@ -76,13 +76,13 @@
 			if($now_month>$user_month)
 			{
 				?>
-				<p>Year <?php echo $now_year-$user_year?></p>
+				<p class="year_user">Year <?php echo $now_year-$user_year?></p>
 				<?php
 			}
 			elseif($now_month<$user_month)
 			{
 				?>
-				<p>Year <?php echo $now_year-$user_year-1?></p>
+				<p class="year_user">Year <?php echo $now_year-$user_year-1?></p>
 				<?php
 			}
 			elseif($now_month==$user_month)
@@ -90,19 +90,19 @@
 				if($now_day>$user_day)
 				{
 					?>
-					<p>Year <?php echo $now_year-$user_year?></p>
+					<p class="year_user">Year <?php echo $now_year-$user_year?></p>
 					<?php
 				}
 				elseif($now_day<$user_day)
 				{
 					?>
-					<p>Year <?php echo $now_year-$user_year-1?></p>
+					<p class="year_user">Year <?php echo $now_year-$user_year-1?></p>
 					<?php
 				}
 				elseif($now_day==$user_day)
 				{
 					?>
-					<p>Year <?php echo $now_year-$user_year?></p>
+					<p class="year_user">Year <?php echo $now_year-$user_year?></p>
 					<?php
 				}
 		}

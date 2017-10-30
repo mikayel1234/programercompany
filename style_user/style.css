@@ -53,4 +53,9 @@
 .user_nl{
 	display: inline-block;
 	font-size: 28px;
+	margin-top:-4px;
+}
+.year_user{
+	font-size: 25px;
+    margin-top: -15px;
 }
