@@ -15,7 +15,7 @@
 			$frined_img=pg_fetch_assoc($img_result);
 			$img_href=$frined_img['href'];
 			?>
-			<img src="<?php echo $img_href?>" id="search_user_photo">
+			<img src="<?php echo $img_href?>" class="search_user_photo">
 			<p><?php echo $row['name']?></p>
 			<p><?php echo $row['lastname']?></p>
 			<?php
