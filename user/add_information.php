@@ -7,7 +7,7 @@
 	<label>educational institution</label>
 	<input type="text" name="class">
 	<label>country</label>
-	<select>
+	<select name="country">
 	<option >Afghanistan</option>
 	<option >Åland Islands</option>
 	<option >Albania</option>
@@ -260,8 +260,9 @@
 </select>
 <label>city</label>
 <input type="text" name="city">
-<label>talephone</label>
+<label>telephone</label>
 <input type="text" name="telephone">
+<input type="submit" name="add_information_user">
 </form>
 </body>
 </html>
