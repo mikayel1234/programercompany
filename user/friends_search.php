@@ -7,7 +7,9 @@
 	$result=pg_query("SELECT * from user_info WHERE (name='$name' OR lastname='$lastname') AND NOT login='$login'");
 	while($row=pg_fetch_assoc($result))
 	{
+		$id=$row['id'];
 		?>
+		<a href="user_inforamtion.php?id=<?php echo $id?>">
 		<div>
 			<?php
 			$frined_login=$row['login'];
@@ -109,6 +111,7 @@
 		?>
 			<hr>
 			</div>
+		</a>
 		<?php
 	}
 	
