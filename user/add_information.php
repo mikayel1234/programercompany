@@ -1,14 +1,32 @@
 <?php
 	include "include_header.php";
 ?>
-<form method="post" action="add_psql_user_info.php"> 
+<script type="text/javascript">
+		$("#new_information").validate({
+			rules:{
+				work:{
+					rangelength:[2,34]
+				},
+				class:{
+					rangelength:[2,32]
+				},
+				city:{
+					rangelength:[2,20]
+				},
+				telephone:{
+					rangelength:[4,30]
+				}
+			}
+		});
+</script>
+<form method="post" action="add_psql_user_info.php" id="new_information"> 
 	<label>workplace</label>
 	<input type="text" name="work">
 	<label>educational institution</label>
 	<input type="text" name="class">
 	<label>country</label>
 	<select name="country">
-		<option >Your country</option>
+	<option >Your country</option>
 	<option >Afghanistan</option>
 	<option >Åland Islands</option>
 	<option >Albania</option>
@@ -262,7 +280,7 @@
 <label>city</label>
 <input type="text" name="city">
 <label>telephone</label>
-<input type="text" name="telephone">
+<input type="number" name="telephone">
 <input type="submit" name="add_information_user">
 </form>
 </body>
