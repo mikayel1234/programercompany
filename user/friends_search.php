@@ -105,10 +105,10 @@
 					<p>Year <?php echo $now_year-$user_year?></p>
 					<?php
 				}
-			?>
-			</div>
-			<?php
 		}
+		?>
+			</div>
+		<?php
 	}
 	
 ?>
