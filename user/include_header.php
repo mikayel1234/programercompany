@@ -50,5 +50,6 @@
 <ul class="sm sm-simple">
 	<li><a href="home_page.php">Public</a></li>
 	<li><a href="friends_page.php">Friends</a></li>
+	<li><a href="add_information.php">add_information</a></li>
 </ul>
 
