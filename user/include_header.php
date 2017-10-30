@@ -36,7 +36,7 @@
 			$('.sm').smartmenus();
 		});
 	</script>
-	<script src="jquery_validate/jquery.validate.min.js"></script>
+	<script src="../jquery_validate/jquery.validate.min.js"></script>
 </head>
 <body>
 <div id="header_reg">
