@@ -14,7 +14,16 @@
 			$country=$_POST['country'];
 			$city=$_POST['city'];
 			$tel=$_POST['telephone'];
-			echo $workplace." ".$class." ".$country." ".$city." ".$tel;
+			$new_info=pg_query("SELECT * from new_info WHERE login='$login'");
+			if (pg_num_rows($new_info)==1) {
+				$add_info=pg_query("UPDATE new_info SET workplace='$workplace',class='$class',country='$country',city='$city',telephone='$tel'");
+			}
+			else
+			{
+				$add_info=pg_query("INSERT INTO new_info(workplace,class,country,city,telephone,login) VALUES('$workplace','$class','$country','$city','$tel','$login')");
+			}
+			header("Location:home_page.php");
+			exit;
 		}
 
 	?>
