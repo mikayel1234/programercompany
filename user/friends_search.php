@@ -5,6 +5,12 @@
 	$name=$nf[0];
 	$lastname=$nf[1];
 	$result=pg_query("SELECT * from user_info WHERE (name='$name' OR lastname='$lastname') AND NOT login='$login'");
+	if(pg_num_rows($result))
+	{
+		?>
+		<p>no result</p>
+		<?php
+	}
 	while($row=pg_fetch_assoc($result))
 	{
 		$id=$row['id'];
