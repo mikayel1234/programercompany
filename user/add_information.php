@@ -8,6 +8,7 @@
 	<input type="text" name="class">
 	<label>country</label>
 	<select name="country">
+		<option >Your country</option>
 	<option >Afghanistan</option>
 	<option >Åland Islands</option>
 	<option >Albania</option>
