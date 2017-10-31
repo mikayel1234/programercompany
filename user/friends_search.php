@@ -114,6 +114,82 @@
 					<?php
 				}
 		}
+		$information_new=pg_query("SELECT * from new_info WHERE login='$frined_login'");
+		if(pg_num_rows($information_new)==0)
+		{
+			?>
+			<p>no information</p>
+			<?php
+		}
+		else
+		{
+			$info=pg_fetch_assoc($information_new);
+			$work=$info['workplace'];
+			$class=$info['class'];
+			$country=$info['country'];
+			$city=$info['city'];
+			$telephone=$info['telephone'];
+			if($work=="")
+			{
+				?>
+				<p>work:dont is </p>
+				<?php
+			}
+			else
+			{
+				?>
+				<p>work:<?php echo $work?></p>
+				<?php
+			}
+			if($class=="")
+			{
+				?>
+				<p>work:dont is </p>
+				<?php
+			}
+			else
+			{
+				?>
+				<p>class:<?php echo $class?></p>
+				<?php
+			}
+			if($country=="")
+			{
+				?>
+				<p>country:dont is </p>
+				<?php
+			}
+			else
+			{
+				?>
+				<p>country:<?php echo $country?></p>
+				<?php
+			}
+			if($city=="")
+			{
+				?>
+				<p>city:dont is </p>
+				<?php
+			}
+			else
+			{
+				?>
+				<p>city:<?php echo $city?></p>
+				<?php
+			}
+			if($telephone=="")
+			{
+				?>
+				<p>telephone:dont is </p>
+				<?php
+			}
+			else
+			{
+				?>
+				<p>telephone:<?php echo $telephone?></p>
+				<?php
+			}
+		}
 		?>
 			<hr>
 			</div>
