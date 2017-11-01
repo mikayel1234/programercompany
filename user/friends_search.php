@@ -192,7 +192,7 @@
 			}
 		}
 		?>
-		<button id="add_friend">
+		<button class="add_friend" id="<?php echo $id?>">
 			<hr>
 			</div>
 		
@@ -201,7 +201,7 @@
 	
 ?>
 <script type="text/javascript">
-	$("#add_friend").click(function(){
+	$(".add_friend").click(function(){
 		console.log("error");
 	});
 </script>
