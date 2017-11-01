@@ -15,7 +15,6 @@
 	{
 		$id=$row['id'];
 		?>
-		<a href="user_inforamtion.php?id=<?php echo $id?>">
 		<div>
 			<?php
 			$frined_login=$row['login'];
@@ -24,8 +23,10 @@
 			$img_href=$frined_img['href'];
 			?>
 			<img src="<?php echo $img_href?>" class="search_user_photo"><br>
+			<a href="user_inforamtion.php?id=<?php echo $id?>">
 			<p class="user_nl"><?php echo $row['name']?></p>
 			<p class="user_nl"><?php echo $row['lastname']?></p><br>
+			</a>
 			<?php
 			$now_year=date("Y");
 			$now_month=date("n");
@@ -194,7 +195,7 @@
 		<button id="add_friend">
 			<hr>
 			</div>
-		</a>
+		
 		<?php
 	}
 	
