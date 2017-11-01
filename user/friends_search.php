@@ -191,6 +191,7 @@
 			}
 		}
 		?>
+		<button id="add_friend">
 			<hr>
 			</div>
 		</a>
@@ -198,5 +199,10 @@
 	}
 	
 ?>
+<script type="text/javascript">
+	$(".add_friend").click(funtion(){
+		console.log("error");
+	});
+</script>
 </body>
 </html>
