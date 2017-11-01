@@ -201,7 +201,7 @@
 	
 ?>
 <script type="text/javascript">
-	$(".add_friend").click(function(){
+	$("#add_friend").click(function(){
 		console.log("error");
 	});
 </script>
