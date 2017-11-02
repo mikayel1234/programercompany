@@ -202,7 +202,8 @@
 ?>
 <script type="text/javascript">
 	$(".add_friend").click(function(){
-		console.log("error");
+		var id_fr=$(this).attr("id");
+		window.location="require_friend.php?id="+id_fr;
 	});
 </script>
 </body>
