@@ -3,7 +3,7 @@
 ?>
 <div>
 	<script type="text/javascript">
-		$("#abc").click(function(){
+		$("#abc").submit(function(){
 			var desk=$("#e").val();
 			console.log(4);
 			var http=new XMLHttpRequest();
