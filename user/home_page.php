@@ -16,9 +16,9 @@
  			$("#e").val("");
 		});
 	</script>
-	<div id="sd">
+	<p id="sd">
 		
-	</div>
+	</p>
 	<script type="text/javascript">
 		function a()
 		{
@@ -27,6 +27,7 @@
 			http1.onreadystatechange=function(){
 				if(http1.status==200&&http1.readyState==4)
 				{
+					console.log(12);
 					var tex=http1.responseText;
 
 					$("sd").text(tex);
