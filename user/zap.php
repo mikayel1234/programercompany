@@ -5,7 +5,7 @@
 	while($row=pg_fetch_assoc($ps))
 	{
 		$d=$row['description'];
-		$a+=$d+" ";		
+		$a.=$d." ";		
 	}
 	echo $a;
 ?>
