@@ -2,7 +2,10 @@
 	include "include_header.php";
 ?>
 <div>
-	<h1>htmoe</h1>
+	<form action="chat.php" method="post">
+		<input type="text" name="desc">
+		<input type="submit" name="add">
+	</form>
 </div>
 </body>
 </html>
