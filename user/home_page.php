@@ -11,10 +11,9 @@
  			http.send("desc="+desk);
 		});
 	</script>
-	<form >
-		<input type="text" name="desc" id="e">
+			<input type="text" name="desc" id="e">
 		<input type="submit" name="add" id="abc">
-	</form>
+	
 </div>
 </body>
 </html>
