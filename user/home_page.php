@@ -24,7 +24,7 @@
 		{
 			var http1=new XMLHttpRequest();
 			http1.open("GET","zap.php",true);
-			http1.onreadystatechange=funtion(){
+			http1.onreadystatechange=function(){
 				if(http1.status==200&&http1.readyState==4)
 				{
 					var tex=http1.responseText;
