@@ -13,7 +13,7 @@
 		});
 	</script>
 			<input type="text" name="desc" id="e">
-		<input type="submit" name="add" id="abc">
+		<button id="abc"></button>
 	
 </div>
 </body>
