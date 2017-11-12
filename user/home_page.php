@@ -13,7 +13,28 @@
 			http.open("POST","chat.php",true);
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
  			http.send("desc="+desk);
+ 			$("#e").val("");
 		});
+	</script>
+	<div id="sd">
+		
+	</div>
+	<script type="text/javascript">
+		function a()
+		{
+			var http1=new XMLHttpRequest();
+			http1.open("GET","zap.php",true);
+			http1.onreadystatechange=funtion(){
+				if(http1.status==200&&http1.readyState==4)
+				{
+					var tex=http1.responseText;
+
+					$("sd").text(tex);
+				}
+			};
+ 			http1.send();
+		}
+		setInterval(a,500);
 	</script>
 </div>
 </body>
