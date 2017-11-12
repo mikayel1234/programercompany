@@ -2,16 +2,19 @@
 	include "include_header.php";
 ?>
 <div>
-	<script type="text/javascript">
-		$("#abc").click(function(){
-			
-			console.log(4);
-			
-		});
-	</script>
+	
 			<input type="text" name="desc" id="e">
 		<button id="abc"></button>
-	
+	<script type="text/javascript">
+		$("#abc").click(function(){
+			var desk=$("#e").val();
+			
+			var http=new XMLHttpRequest();
+			http.open("POST","chat.php",true);
+			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+ 			http.send("desc="+desk);
+		});
+	</script>
 </div>
 </body>
 </html>
