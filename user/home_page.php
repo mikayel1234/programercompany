@@ -30,7 +30,7 @@
 					console.log(12);
 					var tex=http1.responseText;
 
-					$("sd").text(tex);
+					$("#sd").text(tex);
 				}
 			};
  			http1.send();
