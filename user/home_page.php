@@ -29,7 +29,7 @@
 				{
 					console.log(12);
 					var tex=http1.responseText;
-
+					console.log(tex);
 					$("#sd").text(tex);
 				}
 			};
