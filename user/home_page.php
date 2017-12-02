@@ -34,7 +34,7 @@
 					$("#sd").empty();
 					for(var i in arr)
 					{
-						var ov=$("<p/>").text(arr[i]).appendTo("#sd");
+						var ov=$("<p/>").text(arr[i]).css({"fontSize":"25px"}).prependTo("#sd");
 					}
 					
 					
