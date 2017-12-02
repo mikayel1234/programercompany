@@ -35,6 +35,7 @@
 					{
 						var ov=$("<p/>").text(arr[i]).appendTo("body");
 					}
+					$("#sd").empty();
 					$("#sd").append(ov);
 				}
 			};
