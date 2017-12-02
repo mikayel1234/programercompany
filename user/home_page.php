@@ -3,8 +3,8 @@
 ?>
 <div>
 	
-			<input type="text" name="desc" id="e">
-		<button id="abc"></button>
+			<input type="text" name="desc" id="e" >
+		<button id="abc">Send</button>
 	<script type="text/javascript">
 		$("#abc").click(function(){
 			var desk=$("#e").val();
@@ -16,9 +16,9 @@
  			$("#e").val("");
 		});
 	</script>
-	<p id="sd">
+	<div id="sd">
 		
-	</p>
+	</div>
 	<script type="text/javascript">
 		function a()
 		{
