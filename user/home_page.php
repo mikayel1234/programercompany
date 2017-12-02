@@ -31,12 +31,13 @@
 					var tex=http1.responseText;
 					console.log(tex);
 					var arr=tex.split(" ");
+					$("#sd").empty();
 					for(var i in arr)
 					{
-						var ov=$("<p/>").text(arr[i]);
+						var ov=$("<p/>").text(arr[i]).appendTo("#sd");
 					}
-					$("#sd").empty();
-					$("#sd").prepend(ov);
+					
+					
 				}
 			};
  			http1.send();
