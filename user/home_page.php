@@ -30,7 +30,12 @@
 					console.log(12);
 					var tex=http1.responseText;
 					console.log(tex);
-					$("#sd").text(tex);
+					var arr=tex.split(" ");
+					for(var i in arr)
+					{
+						var ov=$("<p/>").text(arr[i]).appendTo("body");
+					}
+					$("#sd").append(ov);
 				}
 			};
  			http1.send();
