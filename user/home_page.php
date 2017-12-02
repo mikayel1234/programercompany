@@ -33,10 +33,10 @@
 					var arr=tex.split(" ");
 					for(var i in arr)
 					{
-						var ov=$("<p/>").text(arr[i]).appendTo("body");
+						var ov=$("<p/>").text(arr[i]);
 					}
 					$("#sd").empty();
-					$("#sd").append(ov);
+					$("#sd").prepend(ov);
 				}
 			};
  			http1.send();
