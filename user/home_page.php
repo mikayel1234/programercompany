@@ -33,6 +33,8 @@
 					$("#sd").empty();
 					for(var i in tex)
 					{
+						console.log(1)
+						console.log(tex[i]);
 						var ov=$("<p/>").text(tex[i]).css({"fontSize":"25px"}).prependTo("#sd");
 					}
 					
