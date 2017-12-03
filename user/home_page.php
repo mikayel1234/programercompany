@@ -33,7 +33,7 @@
 					$("#sd").empty();
 					for(var i in tex)
 					{
-						var ov=$("<p/>").text(arr[i]).css({"fontSize":"25px"}).prependTo("#sd");
+						var ov=$("<p/>").text(tex[i]).css({"fontSize":"25px"}).prependTo("#sd");
 					}
 					
 					
