@@ -28,13 +28,12 @@
 				if(http1.status==200&&http1.readyState==4)
 				{
 					console.log(12);
-					var tex=http1.responseText;
+					var tex=JSON.parse(http1.responseText);
 					console.log(tex);
 					$("#sd").empty();
 					for(var i in tex)
 					{
-						console.log(1)
-						console.log(tex[i]);
+
 						var ov=$("<p/>").text(tex[i]).css({"fontSize":"25px"}).prependTo("#sd");
 					}
 					
