@@ -11,5 +11,5 @@
 		$array[$i]=$a;
 		$i++;
 	}
-	echo $array;
+	echo json_encode($array);
 ?>
