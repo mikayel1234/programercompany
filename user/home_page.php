@@ -30,9 +30,8 @@
 					console.log(12);
 					var tex=http1.responseText;
 					console.log(tex);
-					var arr=tex.split(" ");
 					$("#sd").empty();
-					for(var i in arr)
+					for(var i in tex)
 					{
 						var ov=$("<p/>").text(arr[i]).css({"fontSize":"25px"}).prependTo("#sd");
 					}
