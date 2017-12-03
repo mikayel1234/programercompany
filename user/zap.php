@@ -10,6 +10,7 @@
 		$a.=$row['username']."----".$d;	
 		$array[$i]=$a;
 		$i++;
+		$a="";
 	}
 	echo json_encode($array);
 ?>
