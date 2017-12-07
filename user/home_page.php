@@ -11,10 +11,10 @@
 			var desk=$("#e").val();
 			var desk1=$("#dbc").val();
 			var http=new XMLHttpRequest();
-			console.log(desk1);
 			http.open("POST","chat.php",true);
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
  			http.send("desc="+desk+"&desk1="+desk1);
+ 			console.log("desc="+desk+"&desk1="+desk1);
  			$("#e").val("");
 		});
 	</script>
