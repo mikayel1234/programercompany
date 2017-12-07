@@ -4,16 +4,16 @@
 <div>
 	
 			<input type="text" name="desc" id="e" >
-			<input type="text" name="usr" id="bc">
+			<input type="text" name="usr" id="dbc">
 		<button id="abc">Send</button>
 	<script type="text/javascript">
 		$("#abc").click(function(){
 			var desk=$("#e").val();
-			var desk1=$("#bc").val();
+			var desk1=$("#dbc").val();
 			var http=new XMLHttpRequest();
 			http.open("POST","chat.php",true);
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
- 			http.send("desc="+desk+"&desk1");
+ 			http.send("desc="+desk+"&desk1="+desk1);
  			$("#e").val("");
 		});
 	</script>
