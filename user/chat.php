@@ -3,6 +3,6 @@
 	session_start();
 	$login=$_SESSION['login'];
 	$desc=$_POST["desc"];
-	$ps=pg_query("INSERT INTO chat(username,description) VALUES('$login','$desc')");
+	$ps=pg_query("INSERT INTO chat(username,description) VALUES('$login','$desc','$desc1')");
 	
 ?>
