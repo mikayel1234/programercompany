@@ -16,6 +16,7 @@
  			http.send("desc="+desk+"&desk1="+desk1);
  			console.log("desc="+desk+"&desk1="+desk1);
  			$("#e").val("");
+ 			$("#dbc").val("");
 		});
 	</script>
 	<div id="sd">
