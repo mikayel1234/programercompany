@@ -8,6 +8,7 @@
 		<button id="abc">Send</button>
 		<form>
 			<select>
+				<option>fr_ch</option>
 				<?php
 					session_start();
 					$log=$_SESSION['login'];
@@ -38,9 +39,10 @@
 			</select>
 		</form>
 	<script type="text/javascript">
-		$("#abc").click(function(){
+		$("option").click(function(){
+			$("#abc").click(function(){
 			var desk=$("#e").val();
-			var desk1=$("#dbc").val();
+			var desk1=$(this).val();
 			var http=new XMLHttpRequest();
 			http.open("POST","chat.php",true);
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -48,7 +50,9 @@
  			console.log("desc="+desk+"&desk1="+desk1);
  			$("#e").val("");
  			$("#dbc").val("");
+			});
 		});
+		
 	</script>
 	<div id="sd">
 		
