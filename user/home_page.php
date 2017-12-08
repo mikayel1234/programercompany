@@ -21,10 +21,12 @@
 						<?php
 					}
 					$result=pg_query("SELECT * from friend_answer WHERE login='$log' ");
-					echo pg_num_rows($result);
+
 					while ( $row=pg_fetch_assoc($result)) {
+						echo "d";
 						$id=$row['id'];
 						$res=pg_query("SELECT * from user_info WHERE id=$id");
+						echo pg_num_rows($res);
 						$y=pg_fetch_assoc($res);
 						$id1=$y['login'];
 						?>
