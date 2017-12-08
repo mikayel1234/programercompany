@@ -24,7 +24,7 @@
 
 					while ( $row=pg_fetch_assoc($result)) {
 			
-						$id=$row['id'];
+						$id=$row['fr_id'];
 						echo $id;
 						$res=pg_query("SELECT * from user_info WHERE id=$id");
 						echo pg_num_rows($res);
