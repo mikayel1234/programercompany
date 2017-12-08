@@ -81,7 +81,8 @@
 			};
  			http1.send();
 		}
-		$(".csv").change(function(){
+		$(".csv").focus(function(){
+			console.log(1);
 		setInterval(a,500);
 		});
 	</script>
