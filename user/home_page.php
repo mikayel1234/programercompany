@@ -14,7 +14,7 @@
 					$res=pg_query("SELECT * from user_info WHERE login='$log'");
 					$y=pg_fetch_assoc($res);
 					$id=$y['id'];
-					$result=pg_query("SELECT * from friend_answer WHERE id=$id");
+					$result=pg_query("SELECT * from friend_answer WHERE id=$id or login='$log'");
 					while ( $row=pg_fetch_assoc($result)) {
 						?>
 						<option><?php echo $row['login']?></option>
