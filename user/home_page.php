@@ -18,7 +18,7 @@
 					$result=pg_query("SELECT * from friend_answer WHERE id=$id ");
 					while ( $row=pg_fetch_assoc($result)) {
 						?>
-						<option><?php echo $row['login']?></option>
+						<option class="csv"><?php echo $row['login']?></option>
 						<?php
 					}
 					$result=pg_query("SELECT * from friend_answer WHERE login='$log' ");
@@ -32,14 +32,14 @@
 						$y=pg_fetch_assoc($res);
 						$id1=$y['login'];
 						?>
-						<option><?php echo $id1?></option>
+						<option class="csv"><?php echo $id1?></option>
 						<?php
 					}
 				?>
 			</select>
 		</form>
 	<script type="text/javascript">
-		$("option").click(function(){
+		$(".csv").click(function(){
 			$("#abc").click(function(){
 			var desk=$("#e").val();
 			var desk1=$(this).val();
@@ -58,6 +58,7 @@
 		
 	</div>
 	<script type="text/javascript">
+
 		function a()
 		{
 			var http1=new XMLHttpRequest();
@@ -80,7 +81,9 @@
 			};
  			http1.send();
 		}
+		$(".csv").click(function(){
 		setInterval(a,500);
+		});
 	</script>
 </div>
 </body>
