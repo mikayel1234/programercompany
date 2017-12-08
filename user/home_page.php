@@ -21,6 +21,7 @@
 						<?php
 					}
 					$result=pg_query("SELECT * from friend_answer WHERE login='$log' ");
+					echo pg_num_rows($result);
 					while ( $row=pg_fetch_assoc($result)) {
 						$id=$row['id'];
 						$res=pg_query("SELECT * from user_info WHERE id=$id");
