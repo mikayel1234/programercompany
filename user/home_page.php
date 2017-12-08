@@ -6,6 +6,23 @@
 			<input type="text" name="desc" id="e" >
 			<input type="text" name="desc1" id="dbc">
 		<button id="abc">Send</button>
+		<form>
+			<select>
+				<?php
+					session_start();
+					$log=$_SESSION['login'];
+					$res=pg_query("SELECT * from user_info WHERE login='$log'");
+					$y=pg_fetch_assoc($res);
+					$id=$y['id'];
+					$result=pg_query("SELECT * from friend_answer WHERE id=$id");
+					while ( $row=pg_fetch_assoc($result)) {
+						?>
+						<option><?php echo $row['login']?></option>
+						<?php
+					}
+				?>
+			</select>
+		</form>
 	<script type="text/javascript">
 		$("#abc").click(function(){
 			var desk=$("#e").val();
