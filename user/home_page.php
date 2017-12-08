@@ -7,7 +7,7 @@
 			<input type="text" name="desc1" id="dbc">
 		<button id="abc">Send</button>
 		<form>
-			<select>
+			<select id="sdsd">
 				<option>fr_ch</option>
 				<?php
 					session_start();
@@ -39,7 +39,7 @@
 			</select>
 		</form>
 	<script type="text/javascript">
-		$(".csv").click(function(){
+		$("#sdsd").click(function(){
 			$("#abc").click(function(){
 			var desk=$("#e").val();
 			var desk1=$(this).val();
@@ -81,7 +81,7 @@
 			};
  			http1.send();
 		}
-		$(".csv").focus(function(){
+		$("#sdsd").focus(function(){
 			console.log(1);
 		setInterval(a,500);
 		});
