@@ -6,43 +6,10 @@
 			<input type="text" name="desc" id="e" >
 			<input type="text" name="desc1" id="dbc">
 		<button id="abc">Send</button>
-		<form>
-			<select id="sdsd">
-				<option>fr_ch</option>
-				<?php
-					session_start();
-					$log=$_SESSION['login'];
-					$res=pg_query("SELECT * from user_info WHERE login='$log'");
-					$y=pg_fetch_assoc($res);
-					$id=$y['id'];
-					$result=pg_query("SELECT * from friend_answer WHERE id=$id ");
-					while ( $row=pg_fetch_assoc($result)) {
-						?>
-						<option class="csv"><?php echo $row['login']?></option>
-						<?php
-					}
-					$result=pg_query("SELECT * from friend_answer WHERE login='$log' ");
-
-					while ( $row=pg_fetch_assoc($result)) {
-			
-						$id=$row['fr_id'];
-						echo $id;
-						$res=pg_query("SELECT * from user_info WHERE id=$id");
-						echo pg_num_rows($res);
-						$y=pg_fetch_assoc($res);
-						$id1=$y['login'];
-						?>
-						<option class="csv"><?php echo $id1?></option>
-						<?php
-					}
-				?>
-			</select>
-		</form>
 	<script type="text/javascript">
-		$("#sdsd").click(function(){
-			$("#abc").click(function(){
+		$("#abc").click(function(){
 			var desk=$("#e").val();
-			var desk1=$(this).val();
+			var desk1=$("#dbc").val();
 			var http=new XMLHttpRequest();
 			http.open("POST","chat.php",true);
 			http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -50,15 +17,12 @@
  			console.log("desc="+desk+"&desk1="+desk1);
  			$("#e").val("");
  			$("#dbc").val("");
-			});
 		});
-		
 	</script>
 	<div id="sd">
 		
 	</div>
 	<script type="text/javascript">
-
 		function a()
 		{
 			var http1=new XMLHttpRequest();
@@ -81,10 +45,7 @@
 			};
  			http1.send();
 		}
-		$("#sdsd").focus(function(){
-			console.log(1);
 		setInterval(a,500);
-		});
 	</script>
 </div>
 </body>
