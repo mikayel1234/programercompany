@@ -81,7 +81,7 @@
 			};
  			http1.send();
 		}
-		$(".csv").click(function(){
+		$(".csv").change(function(){
 		setInterval(a,500);
 		});
 	</script>
