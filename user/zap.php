@@ -2,7 +2,7 @@
 	require "../postgresql_require.php";
 	session_start();
 	$mail=$_SESSION['login'];
-	$ps=pg_query("SELECT * from chat WHERE usr='$mail'or username='$mail'");
+	$ps=pg_query("SELECT * from chat WHERE  username='$mail'");
 	$a="";
 	$array=[];
 	
